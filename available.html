@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clubs4Hire.ie</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+  	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  #head{
+  	background-color: #5BC0DE;
+  	display: inline-block;
+  	padding: 10px;
+  	border-radius:10px;
+  }
+  .add{
+  	position:relative;
+  }
+  #header{
+  	margin-top:100px;
+  }
+  .card{
+   	background-color: grey;
+   	border-radius: 10px; 	
+  }
+  p{
+    font-family: Verdana;
+  }
+  #logo{
+    border-radius:10px;
+    position: relative;
+    bottom: 10px;
+
+  }
+  .black{
+    background-color: black;
+  }
+  p{
+    color: white;
+  }
+  h1{
+    color: white;
+  }
+  .
+  #myCarousel {
+    height:auto;
+  }
+    .carousel-inner > .item > img{
+      margin: 0 auto;
+    }
+
+    li {
+      font-family:Verdana, fantasy;
+      font-size: 20px;
+    }
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+
+ 
+
+      /*height:100px;*/
+    }
+
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      color:white;
+      background-color: #222222;
+      padding: 25px;
+    }
+    div {
+      /*border:solid red 3px;*/
+    }
+    .jumbotron {
+    	background-color: black;
+      margin-bottom: 0px;
+    }
+
+    .navText{
+      text-align: right;
+    }
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-responsive">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+       </button>
+      <a class="navbar-brand" href="home.html"><img id="logo" src="logo.jpg" alt="logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="navText"><a href="home.html">Home</a></li>
+        <li class="navText"><a href="aboutus.html">About Us</a></li>
+        <li class="navText"><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul id='price' class="nav navbar-nav navbar-right navText">
+        <li id='totalPrice'><p></p></li>
+      	<li id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+<h1 class="text-center" style="color:white;"><div id="head">Available Sets</div></h1>
+	<div id = "header" class=" container-fluid bg-3 text-center">
+
+  		<div class="row content">
+  			<div class="col-sm-0 col-md-1"></div>
+    		<div id="gentRightPic" class="card col-sm-12 col-md-4">
+    			<img src="mensRight.png" style="padding:20px;">
+        	</div>
+        	<div class="col-sm-0 col-md-1"></div>
+    		<div class="col-sm-12 col-md-5 text-center">
+    			<p>Callaway X22 Irons - X Series Driver & Woods - Putter & Bag (Code:11RG)
+				Gents Right-Handed</p><br>
+				<h1 style="color:white;" >€69.99</h1><br><br>
+				<p>Rental Price Including Delivery and Collection</p>
+				<button data-price="69.99" id="one" class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
+    		</div>
+    		<div class="col-sm-0 col-md-1"></div>
+		</div><hr>
+
+		<div class="row content">
+  			<div class="col-sm-0 col-md-1"></div>
+    		<div id="gentLeftPic" class="card col-sm-12 col-md-4">
+    			<img src="mensLeft.png" style="padding:20px;">
+        	</div>
+        	<div class="col-sm-0 col-md-1"></div>
+    		<div class="col-sm-12 col-md-5 text-center">
+
+    			<p>Gents Left-Handed Callaway G2 Irons - G5 Driver & Woods - Putter & Bag (Code:3LG)
+				Gents Left-Handed</p><br>
+				<h1 style="color:white;" >€79.99</h1><br><br>
+				<p>Rental Price Including Delivery and Collection</p>
+				<button data-price="79.99" id="two" class="button-basket sevenNine add btn btn-info btn-lg ">Add to Basket</button>
+
+    		</div>
+    		<div class="col-sm-0 col-md-1"></div>
+		</div><hr>
+
+		<div class="row content">
+  			<div class="col-sm-0 col-md-1"></div>
+    		<div id="ladiesLeft" class="card col-sm-12 col-md-4">
+    			<img src="ladiesLeft.png" style="padding:20px;">
+        	</div>
+        	<div class="col-sm-0 col-md-1"></div>
+    		<div class="col-sm-12 col-md-5 text-center">
+    			<br>
+    			<p>Ladie Left-Handed Taylormade Burner Irons - R9 Driver & Woods - Putter & Bag (Code:2LG)
+				Ladies Left-Handed</p><br>
+				<h1 style="color:white;" >€79.99</h1><br><br>
+				<p>Rental Price Including Delivery and Collection</p>
+				<button data-price="79.99" id="three" class="button-basket sevenNine add btn btn-info btn-lg ">Add to Basket</button>
+    		</div>
+    		<div class="col-sm-0 col-md-1"></div>
+		</div><hr>
+
+		<div class="row content">
+  			<div class="col-sm-0 col-md-1"></div>
+    		<div id="ladiesRight" class="card col-sm-12 col-md-4">
+    			<img src="ladiesRight.png" style="padding:20px;">
+        	</div>
+        	<div class="col-sm-0 col-md-1"></div>
+    		<div class="col-sm-12 col-md-5 text-center">
+    			<br>
+    			<p>Ladies Ping RBZ Irons, Hybrids and Woods - Putter & Bag (1RL)
+				Ladies Right-Handed</p><br>
+				<h1 style="color:white;" >€69.99</h1><br><br>
+				<p>Rental Price Including Delivery and Collection</p>
+				<button data-price="69.99" id="four"class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
+    		</div>
+    		<div class="col-sm-0 col-md-1"></div>
+		</div><hr>
+		
+		<div class="row content">
+  			<div class="col-sm-0 col-md-1"></div>
+    		<div id="setPic1" class="card col-sm-12 col-md-4">
+    			<img src="mensRight.png" style="padding:20px;">
+        	</div>
+        	<div class="col-sm-0 col-md-1"></div>
+    		<div class="col-sm-12 col-md-5 text-center">
+    			<br>
+    			<p>Callaway Burner OS Graphite Irons - R11 Senior Shaft Driver, Reg Woods, Rescue - Putter & Bag (29RG)
+				Gents Right-Handed</p><br>
+				<h1 style="color:white;" >€69.99</h1><br><br>
+				<p>Rental Price Including Delivery and Collection</p>
+				<button data-price="69.99" id="five" class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
+    		</div>
+    		<div class="col-sm-0 col-md-1"></div>
+		</div><hr>
+
+		<div class="row content">
+  			<div class="col-sm-0 col-md-1"></div>
+    		<div id="MensLeft2" class="card col-sm-12 col-md-4">
+    			<img src="mensLeft.png" style="padding:20px;">
+        	</div>
+        	<div class="col-sm-0 col-md-1"></div>
+    		<div class="col-sm-12 col-md-5 text-center">
+    			<br>
+    			<p>Gents Left-Handed Callaway X Series Irons - X Hot Pro Reg Shaft Driver, Wood, Rescue - Putter & Bag (6LG)
+				Gents Left-Handed</p><br>
+				<h1 style="color:white;" >€79.99</h1><br><br>
+				<p>Rental Price Including Delivery and Collection</p>
+				<button data-price="79.99" id="six" class="button-basket sevenNine add btn btn-info btn-lg ">Add to Basket</button>
+    		</div>
+    		<div class="col-sm-0 col-md-1"></div>
+		</div><hr>
+
+		<div class="row content">
+  			<div class="col-sm-0 col-md-1"></div>
+    		<div id="ladiesRight2" class=" col-sm-12 col-md-4">
+    			<img class="img-fluid" src="ladiesRight.png"  style="padding:20px;">
+        	</div>
+        	<div class="col-sm-0 col-md-1"></div>
+    		<div class="col-sm-12 col-md-5 text-center">
+    			<br>
+    			<p>Ladies Ping Solaire 8 Piece Set (Right-Handed) (6RL)
+				Ladies Right-Handed</p><br>
+				<h1 style="color:white;" >€69.99</h1><br><br>
+				<p>Rental Price Including Delivery and Collection</p>
+				<button data-price="69.99" id="seven" class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
+    		</div>
+    		<div class="col-sm-0 col-md-1"></div>
+		</div><hr>
+
+		<div class="row content">
+  			<div class="col-sm-0 col-md-1"></div>
+    		<div id="ladiesLeft2" class="card col-sm-12 col-md-4">
+    			<img src="ladiesLeft.png" style="padding:20px;">
+        	</div>
+        	<div class="col-sm-0 col-md-1"></div>
+    		<div class="col-sm-12 col-md-5 text-center">
+    			<br>
+    			<p>Ladies Left-Handed TaylorMade X Series Irons - X Hot Pro Reg Shaft Driver, Wood, Rescue - Putter & Bag (6LG)
+				Ladies Left-Handed</p><br>
+				<h1 style="color:white;" >€79.99</h1><br><br>
+				<p>Rental Price Including Delivery and Collection</p>
+				<button data-price="79.99" id="eight" class="button-basket sevenNine add btn btn-info btn-lg">Add to Basket</button>
+
+    		</div>
+    		<div class="col-sm-0 col-md-1"></div>
+		</div><hr>
+	</div>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+  <p>Clubs4Hire™</p>
+  <br>
+  <a href="available.html">Top</a>
+</footer>
+
+<script>
+
+localStorage.removeItem("finalCurrency");
+localStorage.removeItem("finalFigure");
+
+var totalPrice = 0;
+
+$(".button-basket").on("click", function() {
+  var price = $(this).attr("data-price")
+  totalPrice += parseFloat(price);
+    $('#total-basket').html("€" + totalPrice.toFixed(2)); 
+})
+   
+$("#one").on('click', function() {
+  localStorage.setItem("one", "Callaway X22 Irons - X Series Driver & Woods - Putter & Bag Code:11RG Gents Right-Handed" );
+  localStorage.setItem("onePic", "<img src='mensRight.png' style='padding:20px;'>");
+})
+
+
+$("#cart-select").on("click", function() {
+      localStorage.setItem("price", totalPrice);
+})
+
+
+// $("#club").on("change", function() {
+//   var currentValue = $(this).val();
+//   localStorage.setItem("golf-field", currentValue);
+// })
+
+$.ajax({
+  url: 'http://api.fixer.io/latest',
+  dataType: "json"
+});
+
+
+
+</script>
+<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>	
+</body>
+</html>

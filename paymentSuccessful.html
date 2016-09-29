@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clubs4Hire.ie</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+  	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  #return{
+    position: relative;
+    bottom: 90px;
+  }
+  #success {
+    border-radius: 10px;
+  }
+  #total h2{
+    color: white;
+    size: 30px;
+
+  }
+  #congrats {
+    margin-top:80px;
+    margin-bottom: 200px;
+  }
+
+
+  #buttonPay{
+    position: relative;
+    top:20px;
+  }
+  .basket{
+    padding:30px;
+    /*margin:30px;*/
+  }
+  #head{
+  	background-color: #5BC0DE;
+  	display: inline-block;
+  	padding: 10px;
+  	border-radius:10px;
+  }
+  .add{
+  	position:relative;
+  }
+  #header{
+  	margin-top:100px;
+  }
+  .card{
+   	background-color: grey;
+   	border-radius: 10px; 	
+  }
+  p{
+    font-family: Verdana;
+  }
+  #logo{
+    border-radius:10px;
+    position: relative;
+    bottom: 10px;
+  }
+  .black{
+    background-color: black;
+  }
+  p{
+    color: white;
+  }
+  h1{
+    color: white;
+  }
+  .
+  #myCarousel {
+    height:auto;
+  }
+    .carousel-inner > .item > img{
+      margin: 0 auto;
+    }
+
+    li {
+      font-family:Verdana, fantasy;
+      font-size: 20px;
+    }
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      position: fixed-relative;
+      /*height:100px;*/
+    }
+
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      color:white;
+      background-color: #222222;
+      padding: 25px;
+    }
+    div {
+      /*border:solid red 3px;*/
+    }
+    .jumbotron {
+    	background-color: black;
+      margin-bottom: 0px;
+    }
+
+    .navText{
+      text-align: right;
+    }
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-responsive">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+       </button>
+      <a class="navbar-brand" href="home.html"><img id="logo" src="logo.jpg" alt="logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="navText"><a href="home.html">Home</a></li>
+        <li class="navText"><a href="aboutus.html">About Us</a></li>
+        <li class="navText"><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<jumbotron>
+  <div id="congrats" class="text-center">
+    <img src="success.jpg" id="success" alt="payment successful">
+    <h2>Payment Received</h2><br>
+    <h2>Confirmation No: 679997693</h2><br>
+    <h3>You will receive a confirmation e-Mail shortly</h3>
+    <p></p>
+  </div>
+  <div id="return" class="text-center container-responsive"><a href="home.html"><button id="returnHome" class="btn btn-info btn-lg">Return to Homescreen</button></a></div>
+</jumbotron>
+
+<footer class="container-fluid text-center">
+  <p>Clubs4Hire™</p>
+  <br>
+  <a href="basket.html">Top</a>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>	
+<script>
+$("#returnHome").on("click", function() {
+  
+  localStorage.removeItem("golf-field");
+  localStorage.removeItem("finalCurrency");  
+  localStorage.removeItem("finalFigure");
+  localStorage.removeItem("one");
+  localStorage.removeItem("onePic")
+  localStorage.setItem("price", 0);
+});
+</script>
+</body>
+</html>

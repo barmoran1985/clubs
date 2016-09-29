@@ -1,0 +1,47 @@
+[
+    {
+        "id": "8G7DNB00",
+        "name": "the k club",
+        "description": "The K Club is home to two championship Golf Courses- The Palmer Ryder Cup Course and the Palmer designed Smurfit Course. Hailed among the world's finest golf resorts, The K Club was the chosen venue for the 2006 Ryder Cup and host to the European Open from 1995 to 2007.",
+        "website": "www.kclub.ie",
+        "address": "The Kildare Hotel, Spa & Country Club Straffan Kildare (Ireland)",
+        "established": "1991",
+        "image": "kClub.jpeg",
+    },    
+    {
+        "id": "H38DHJK2",
+        "name": "druids glen",
+        "description": "This famous course designed by Pat Ruddy & Tom Craddock, opened in 1995. Just a year after opening, Druids Glen hosted the Irish Open for four years in a row. Colin Montgomerie won two years running, followed by David Carter and Sergio Garcia, shooting a 64 in the final round. Druids Glen has hosted the prestigious Seve Trophy, a bi-annual event between the leading Tour Players of Britain & Ireland and Continental Europe.",
+        "website": "http://druidsglenresort.cms.netaffinity.com/golf.html",
+        "address": "Druids Glen Hotel & Golf Resort, Newtownmountkennedy, Co.Wicklow, Ireland",
+        "established": "1966",
+        "image": "druidsGlen.jpeg",
+    },
+    {
+        "id": "8884H22W",
+        "name": "royal county down",
+        "description": "Royal County Down is located in one of the world’s most naturally beautiful links settings in the Murlough Nature Reserve. Against the magnificent backdrop of the Mountains of Mourne, the links stretches along the shores of Dundrum Bay, zigzagging back and forth to provide a different vista from virtually every hole.",
+        "website": "https://www.royalcountydown.org/",
+        "address": "36 Golf Links Rd, Newcastle, Co. Down, BT33 0AN, N. Ireland ",
+        "established": "1939",
+        "image": "royalcountydown.jpg",
+    },
+    {
+        "id": "4HS93KK4",
+        "name": "portmarnock",
+        "description": "Situated on the shoreline of a rugged peninsula, The Links Portmarnock was the first golf course that International Management Group (IMG) developed in Ireland and opened for play in 1995. It was therefore fitting that Bernhard Langer chose this magnificent setting to design his first links course being a three time winner of the Irish Open at nearby Portmarnock Golf Club and The Royal Dublin Golf Club.",
+        "website": "http://www.portmarnock.com/",
+        "address": "Portmarnock Hotel & Golf Links, Strand Road, Portmarnock, Co. Dublin, Ireland",
+        "established": "1995",
+        "image": "portmarnock.JPG",
+    },
+    {
+        "id": "110OPOE8",
+        "name": "lahinch",
+        "description": "Since its foundation in 1892, Lahinch Golf Club is rightly regarded as one of the world’s finest links golf courses. The Old Course; today, is a spectacular links and is a product of design originally by Old Tom Morris and, more significantly, in the 1920’s by Alistair McKenzie. The Old Course was dramatically modernised and further enhanced by Martin Hawtree in 2003, and is consistently ranked among Europe’s Top 20 and the World’s Top 50 golf courses. Our second course, The Castle Course, is pure links and while less challenging than the Old Course, it is also very popular with our members and visitors.",
+        "website": "www.lahinchgolf.com",
+        "address": "Lahinch Golf Club, Lahinch, Co. Clare, Ireland.",
+        "established": "1892",
+        "image": "lahinch.JPG",
+    }
+]
