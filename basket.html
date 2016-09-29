@@ -191,7 +191,7 @@
     $("#currencySelect").on('change', function(e) {
       e.preventDefault();
       idFX = $(this).val();
-      var urlFX = "http://api.fixer.io/latest?symbols=" + idFX;
+      var urlFX = "https://api.fixer.io/latest?symbols=" + idFX;
 
       console.log(urlFX);
 
