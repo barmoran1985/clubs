@@ -6,7 +6,7 @@
         "website": "www.kclub.ie",
         "address": "The Kildare Hotel, Spa & Country Club Straffan Kildare (Ireland)",
         "established": "1991",
-        "image": "kClub.jpeg",
+        "image": "kClub.jpeg"
     },    
     {
         "id": "H38DHJK2",
@@ -15,7 +15,7 @@
         "website": "http://druidsglenresort.cms.netaffinity.com/golf.html",
         "address": "Druids Glen Hotel & Golf Resort, Newtownmountkennedy, Co.Wicklow, Ireland",
         "established": "1966",
-        "image": "druidsGlen.jpeg",
+        "image": "druidsGlen.jpeg"
     },
     {
         "id": "8884H22W",
@@ -24,7 +24,7 @@
         "website": "https://www.royalcountydown.org/",
         "address": "36 Golf Links Rd, Newcastle, Co. Down, BT33 0AN, N. Ireland ",
         "established": "1939",
-        "image": "royalcountydown.jpg",
+        "image": "royalcountydown.jpg"
     },
     {
         "id": "4HS93KK4",
@@ -33,7 +33,7 @@
         "website": "http://www.portmarnock.com/",
         "address": "Portmarnock Hotel & Golf Links, Strand Road, Portmarnock, Co. Dublin, Ireland",
         "established": "1995",
-        "image": "portmarnock.JPG",
+        "image": "portmarnock.JPG"
     },
     {
         "id": "110OPOE8",
@@ -42,6 +42,6 @@
         "website": "www.lahinchgolf.com",
         "address": "Lahinch Golf Club, Lahinch, Co. Clare, Ireland.",
         "established": "1892",
-        "image": "lahinch.JPG",
+        "image": "lahinch.JPG"
     }
 ]
