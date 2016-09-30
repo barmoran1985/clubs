@@ -9,6 +9,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+  div a span.glyphicon{
+    font-size: 50px;
+    position: relative;
+    top: 10px;
+  }
+  li a span.glyphicon{
+    font-size: 20px;
+   }
+   #cart-select{
+    position: relative;
+    bottom: 10px;
+    right: 15px;
+   }
+
   #head{
   	background-color: #5BC0DE;
   	display: inline-block;
@@ -129,6 +143,7 @@
 				<h1 style="color:white;" >€69.99</h1><br><br>
 				<p>Rental Price Including Delivery and Collection</p>
 				<button data-price="69.99" id="one" class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
+        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
     		</div>
     		<div class="col-sm-0 col-md-1"></div>
 		</div><hr>
@@ -146,7 +161,7 @@
 				<h1 style="color:white;" >€79.99</h1><br><br>
 				<p>Rental Price Including Delivery and Collection</p>
 				<button data-price="79.99" id="two" class="button-basket sevenNine add btn btn-info btn-lg ">Add to Basket</button>
-
+        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
     		</div>
     		<div class="col-sm-0 col-md-1"></div>
 		</div><hr>
@@ -164,6 +179,7 @@
 				<h1 style="color:white;" >€79.99</h1><br><br>
 				<p>Rental Price Including Delivery and Collection</p>
 				<button data-price="79.99" id="three" class="button-basket sevenNine add btn btn-info btn-lg ">Add to Basket</button>
+        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
     		</div>
     		<div class="col-sm-0 col-md-1"></div>
 		</div><hr>
@@ -181,6 +197,7 @@
 				<h1 style="color:white;" >€69.99</h1><br><br>
 				<p>Rental Price Including Delivery and Collection</p>
 				<button data-price="69.99" id="four"class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
+        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
     		</div>
     		<div class="col-sm-0 col-md-1"></div>
 		</div><hr>
@@ -198,6 +215,7 @@
 				<h1 style="color:white;" >€69.99</h1><br><br>
 				<p>Rental Price Including Delivery and Collection</p>
 				<button data-price="69.99" id="five" class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
+        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
     		</div>
     		<div class="col-sm-0 col-md-1"></div>
 		</div><hr>
@@ -215,6 +233,7 @@
 				<h1 style="color:white;" >€79.99</h1><br><br>
 				<p>Rental Price Including Delivery and Collection</p>
 				<button data-price="79.99" id="six" class="button-basket sevenNine add btn btn-info btn-lg ">Add to Basket</button>
+        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
     		</div>
     		<div class="col-sm-0 col-md-1"></div>
 		</div><hr>
@@ -232,6 +251,7 @@
 				<h1 style="color:white;" >€69.99</h1><br><br>
 				<p>Rental Price Including Delivery and Collection</p>
 				<button data-price="69.99" id="seven" class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
+        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
     		</div>
     		<div class="col-sm-0 col-md-1"></div>
 		</div><hr>
@@ -249,7 +269,7 @@
 				<h1 style="color:white;" >€79.99</h1><br><br>
 				<p>Rental Price Including Delivery and Collection</p>
 				<button data-price="79.99" id="eight" class="button-basket sevenNine add btn btn-info btn-lg">Add to Basket</button>
-
+        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
     		</div>
     		<div class="col-sm-0 col-md-1"></div>
 		</div><hr>
@@ -261,7 +281,7 @@
 <footer class="container-fluid text-center">
   <p>Clubs4Hire™</p>
   <br>
-  <a href="available.html">Top</a>
+  <a href="#">Top</a>
 </footer>
 
 <script>
