@@ -10,6 +10,10 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
   #blackBorder{
+    position: relative;
+    top: 20px;
+  }
+  #blackBorder{
     display: inline-block;
   }
   #total h2{
@@ -148,7 +152,12 @@
   </form><h1></h1><h2></h2><br>
   </fieldset>
   <p>Rental Price Including Delivery and Collection</p>
+  <p id="timeDate"></p>
   </div>
+  <div style="padding:10px">
+  <img src="" style="border-radius:10px;" id='course'>
+  <h2 id="name" style="color:white; "></h2>
+  <p id='description'></p></div>
   </div>
 <div class="row" id="firstSelect">  
   <div id="clubPic1" class="basket col-md-6 text-center" style="padding:0;"></div>
@@ -179,7 +188,31 @@
 
 <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>	
 <script>
-  
+    var course = localStorage.getItem('course');
+    var day = localStorage.getItem("day-select");
+    var month = localStorage.getItem("month");
+    $("#timeDate").html("Your clubs will be delivered to " + course + " prior to 8am on " + day + " " + month + ".");
+
+    
+    console.log(course);
+    $.ajax({
+      url: 'golfCourses.json',
+      dataType: 'json'
+    })
+    .success( function(data) {
+      $.each( data, function( index, elem ) {
+        var name = elem.name;
+        var description = elem.description;
+        var image = elem.image;
+        if(name === course){
+        $("#course").attr("src", image);
+        $("#name").html(name);
+        $("#description").html(description);
+        }
+
+      });
+      
+    })
     var fieldSelected = localStorage.getItem("golf-field");
     $("#clubPic h2").html(fieldSelected);
 
@@ -214,6 +247,8 @@
       var currentValue = $(this).val();
       localStorage.setItem("golf-field", currentValue);
     });
+
+
 
 
 </script>

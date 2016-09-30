@@ -9,13 +9,32 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+  #tick{
+    position: relative;
+    left: 20px;
+
+  }
+  fieldset{
+    border: solid black 1px;
+  }
+  #Hotel{
+    position: relative;
+    bottom: 20px;
+  }
+  #submit{
+    color: white;
+    background-color: #337AB7;
+    position: relative;
+    bottom: 10px;
+    border-radius: 5px;
+  }
 
   #color{
     color: white;
   }
   #go{
     position:relative;
-    bottom:-40px;
+    bottom:-20px;
     z-index: 0;
   }
   #textInput{
@@ -169,47 +188,86 @@ p{
 <div class="black">
 <container class="form">
   <div class="row">
-  <div class = "col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center container-fluid">
-<!--     <form action="#" id="select-artist">
-    
-      <legend>Club Type</legend>
-      <div>
-        <label for="club"></label>
-        <select id="club">
-          <option>Select</option>
-          <option value="Male Right">Gents Right Handed</option>
-          <option value="Male Left">Gents Left Handed</option>
-          <option value="Female Right">Ladies Right Handed</option> 
-          <option value="Female Left">Ladies Left Handed</option> 
+  
+  <div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center container-fluid">
+    <form action="#" id="month">
+    <fieldset>
+      
+   <form action="#" id="day">
+    <fieldset>
+      <div id="blackBorder2">
+        <label for="day">Day</label>
+        <select name="day" id="daySelect"> 
+          <option value="select">Select Day</option>         
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
         </select>
-
       </div>
-   
-  </form> -->
+ <div id="blackBorder1">
+        <label for="month">Month</label>
+        <select name="month" id="monthSelect"> 
+          <option value="select">Select Month</option>         
+          <option value="Sep 2016">Sep 2016</option>
+          <option value="Oct 2016" >Oct 2016</option>
+          <option value="Nov 2016">Nov 2016</option>
+          <option value="Dec 2016">Dec 2016</option>
+          <option value="Jan 2017" >Jan 2017</option>
+          <option value="Feb 2017">Feb 2017</option>
+          <option value="Mar 2017">Mar 2017</option>
+          <option value="Apr 2017" >Apr 2017</option>
+          <option value="May 2017">May 2017</option>
+          <option value="Jun 2017">Jun 2017</option>
+          <option value="Jul 2017" >Jul 2017</option>
+          <option value="Aug 2017">Aug 2017</option>
+        </select>
+      </div>
+  </form>
+  </form>
   </div>
-  <div class = "col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center container-fluid">
+    <div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center container-fluid">
     <form action="#" id="Hotel" >
     
       <legend>Golf Club/Hotel for Delivery</legend>
       <div>
         <label for="artists"></label>
         <input type="text" class="form-control" id="textInput">
+        
+        <input id="submit" type="submit" value="Search!"><span id="tick"></span>
+      
       </div>
    
   </form>
-  </div>  
-  <div class = "col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center container-fluid">
-  <!--   <form action="#" id="select-dates">
-    <legend>Pick Your Dates</legend>
-      <div class='input-group date' id='datetimepicker1'>
-        <input type='text' class="form-control"/>
-          <span class="input-group-addon">
-          <span class="glyphicon glyphicon-calendar"></span>
-          </span>
-      </div>
-    </form> -->
-  </div>
-      <div class = "col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center container-fluid">
+  </div>ß
+      <div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center container-fluid">
     <form action="#" id="select-artist">
     
      
@@ -258,7 +316,32 @@ p{
   <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script> 
   <script>
 
-      </script>
+    $("#daySelect").on('change', function(e) {
+      
+      var idDay = $(this).val();
+      localStorage.setItem("day-select", idDay);
+    });    
+
+    $("#monthSelect").on('change', function(f) {
+      
+      var idMonth = $(this).val();
+      localStorage.setItem("month", idMonth);
+    });
+
+
+$("#Hotel input[type='submit']").on('click', function() {
+
+      
+      var nameCourse = $("#Hotel #textInput").val();
+      localStorage.setItem("course", nameCourse);
+      $("#tick").attr("class", 'glyphicon glyphicon-ok');
+      
+
+
+    });
+
+
+  </script>
 </body>
 
 </html>
