@@ -9,9 +9,59 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-  .rental {
-    font-size: 20px;
+  div a .total-basket {
+    position: relative;
+    left:5px;
   }
+
+  li a .total-basket {
+  position: relative;
+  bottom: 5px;
+  left:10px;
+}
+
+  .toCart {
+    position: relative;
+    left: 0px;
+  }
+
+    .card img {
+    position: relative;
+    top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .button-basket {
+    background-color:#559BDE; 
+  }
+
+  .button-basket:hover {
+  background-color:#555; 
+}
+
+  .rental {
+    font-size: 5px;
+  }
+
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #559BDE; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
 
   /*  -----------FOOTER CSS--------------*/
 
@@ -22,7 +72,6 @@
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
-
   padding: 55px 50px;
   margin-top: 80px;
 }
@@ -185,11 +234,16 @@
 
 /*  -----------FOOTER CSS--------------*/
   div a span.glyphicon{
-    font-size: 50px;
+    font-size: 30px;
     position: relative;
     top: 10px;
+    left: 10px;
   }
   li a span.glyphicon{
+    font-size: 30px;
+    position: relative;
+    top: 0px;
+    left: 10px;
     font-size: 20px;
    }
    #cart-select{
@@ -211,9 +265,10 @@
   	margin-top:100px;
   }
   .card{
-   	background-color: grey;
+   	background-color: lightgrey;
    	border-radius: 10px; 	
-  }
+    width: 95%;
+}
   p{
     font-family: Verdana;
   }
@@ -227,18 +282,12 @@
     background-color: black;
   }
   p{
-    color: white;
+    color: black;
   }
   h1{
-    color: white;
+    color: black;
   }
   .
-  #myCarousel {
-    height:auto;
-  }
-    .carousel-inner > .item > img{
-      margin: 0 auto;
-    }
 
     li {
       font-family:Verdana, fantasy;
@@ -256,16 +305,12 @@
 
     
     /* Add a gray background color and some padding to the footer */
-    footer {
-      color:white;
-      background-color: #222222;
-      padding: 25px;
-    }
+
     div {
-      /*border:solid red 3px;*/
+/*      border:solid red 3px;*/
     }
     .jumbotron {
-    	background-color: black;
+    	background-color: white;
       margin-bottom: 0px;
     }
 
@@ -276,9 +321,10 @@
 </style>
 </head>
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <nav class="navbar navbar-inverse">
-  <div class="container-responsive">
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -290,164 +336,184 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="navText"><a href="index.html">Home</a></li>
+        <li class="active navText"><a href="index.html">Home</a></li>
         <li class="navText"><a href="aboutus.html">About Us</a></li>
       </ul>
-      <ul id='price' class="nav navbar-nav navbar-right navText">
-        <li id='totalPrice'><p></p></li>
-      	<li id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></li>
-        <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li> -->
+      <ul class="nav navbar-nav navbar-right navText">
+
+        <li><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span><span class='total-basket'></span></a></li>
+          <li>
+
+          <div id="google_translate_element"></div>
+          </li>
+          <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+          }
+          </script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="jumbotron">
-<h1 class="text-center" style="color:white;"><div id="head">Available Sets</div></h1>
 	<div id = "header" class=" container-fluid bg-3 text-center">
 
-  		<div class="row content">
+  		<div class="row card content center-block">
+        <br>
   			<div class="col-sm-0 col-md-1"></div>
-    		<div id="gentRightPic" class="card col-sm-12 col-md-4">
-    			<img src="mensRight.png" class="img-responsive" style="padding:20px;">
+    		<div id="gentRightPic" class="col-sm-12 col-md-4">
+    			<img src="mensRight.png" class="img-responsive center-block" style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
-    			<p>Callaway X22 Irons - X Series Driver & Woods - Putter & Bag (Code:11RG)
-				Gents Right-Handed</p>
-				<h1 style="color:white;" >€69.99</h1>
-				<p class="rental">Rental Price Including Delivery and Collection</p>
-				<button data-price="69.99" id="one" class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
-        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
+    			<h2>Callaway X22 Irons - X Series Driver & Woods - Putter & Bag (Code:11RG)
+				Gents Right-Handed</h2>
+				<h3 style="color:black;" >€69.95</h3>
+				<p class="rental" style="font-size: 10px;">Rental Price Including Delivery and Collection</p>
+				<div class ="toCart" id="cart-select"><button data-price="69.95" id="one" class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
+        <a href="basket.html" class="cart"><span class="glyphicon glyphicon-shopping-cart"></span> <span class='total-basket'></span></a></div>
+        <br>
     		</div>
-    		<div class="col-sm-0 col-md-1"></div>
-		</div><hr>
 
-		<div class="row content">
+		</div><br>
+
+		<div class="row card content center-block">
+        <br>
   			<div class="col-sm-0 col-md-1"></div>
-    		<div id="gentLeftPic" class="card col-sm-12 col-md-4">
-    			<img src="mensLeft.png" class="img-responsive" style="padding:20px;">
+    		<div id="gentLeftPic" class="col-sm-12 col-md-4">
+    			<img src="mensLeft.png" class="img-responsive center-block" style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
 
-    			<p>Gents Left-Handed Callaway G2 Irons - G5 Driver & Woods - Putter & Bag (Code:3LG)
-				Gents Left-Handed</p><br>
-				<h1 style="color:white;" >€79.99</h1>
-				<p class="rental">Rental Price Including Delivery and Collection</p>
-				<button data-price="79.99" id="two" class="button-basket sevenNine add btn btn-info btn-lg ">Add to Basket</button>
-        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
+    			<h2>Gents Left-Handed Callaway G2 Irons - G5 Driver & Woods - Putter & Bag (Code:3LG)
+				Gents Left-Handed</h2>
+				<h3 style="color:black;">€79.95</h3>
+				<p class="rental" style="font-size: 10px;">Rental Price Including Delivery and Collection</p>
+				<div class ="toCart" id="cart-select"><button data-price="79.95" id="two" class="button-basket sevenNine add btn btn-info btn-lg ">Add to Basket</button>
+        <a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span class='total-basket'></span></a></div>
     		</div>
     		<div class="col-sm-0 col-md-1"></div>
-		</div><hr>
+		</div><br>
 
-		<div class="row content">
+		<div class="row card content center-block">
+        <br>
   			<div class="col-sm-0 col-md-1"></div>
-    		<div id="ladiesLeft" class="card col-sm-12 col-md-4">
-    			<img src="ladiesLeft.png" class="img-responsive" style="padding:20px;">
-        	</div>
-        	<div class="col-sm-0 col-md-1"></div>
-    		<div class="col-sm-12 col-md-5 text-center">
-    			<br>
-    			<p>Ladie Left-Handed Taylormade Burner Irons - R9 Driver & Woods - Putter & Bag (Code:2LG)
-				Ladies Left-Handed</p>
-				<h1 style="color:white;" >€79.99</h1>
-				<p class="rental">Rental Price Including Delivery and Collection</p>
-				<button data-price="79.99" id="three" class="button-basket sevenNine add btn btn-info btn-lg ">Add to Basket</button>
-        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
-    		</div>
-    		<div class="col-sm-0 col-md-1"></div>
-		</div><hr>
-
-		<div class="row content">
-  			<div class="col-sm-0 col-md-1"></div>
-    		<div id="ladiesRight" class="card col-sm-12 col-md-4">
-    			<img src="ladiesRight.png" class="img-responsive" style="padding:20px;">
+    		<div id="ladiesLeft" class="col-sm-12 col-md-4">
+    			<img src="ladiesLeft.png" class="img-responsive center-block" style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
     			<br>
-    			<p>Ladies Ping RBZ Irons, Hybrids and Woods - Putter & Bag (1RL)
-				Ladies Right-Handed</p>
-				<h1 style="color:white;" >€69.99</h1>
-				<p class="rental">Rental Price Including Delivery and Collection</p>
-				<button data-price="69.99" id="four"class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
-        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
+    			<h2>Ladie Left-Handed Taylormade Burner Irons - R9 Driver & Woods - Putter & Bag (Code:2LG)
+				Ladies Left-Handed</h3>
+				<h3 style="color:black;" >€79.95</h3>
+				<p class="rental" style="font-size: 10px;">Rental Price Including Delivery and Collection</p>
+				<div class ="toCart" id="cart-select"><button data-price="79.95" id="three" class="button-basket sevenNine add btn btn-info btn-lg ">Add to Basket</button>
+        <a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span class='total-basket'></span></a></div>
+    		</div><br>
+    		<div class="col-sm-0 col-md-1"></div>
+		</div><br>
+
+		<div class="row card content center-block">
+      <br>
+  			<div class="col-sm-0 col-md-1"></div>
+    		<div id="ladiesRight" class="col-sm-12 col-md-4">
+    			<img src="ladiesRight.png" class="img-responsive center-block" style="padding:20px;">
+        	</div>
+        	<div class="col-sm-0 col-md-1"></div>
+    		<div class="col-sm-12 col-md-5 text-center">
+    			<br>
+    			<h2>Ladies Ping RBZ Irons, Hybrids and Woods - Putter & Bag (1RL)
+				Ladies Right-Handed</h2>
+				<h3 style="color:black;" >€69.95</h3>
+				<p class="rental" style="font-size: 10px;">Rental Price Including Delivery and Collection</p>
+				<div class ="toCart" id="cart-select"><button data-price="69.95" id="four"class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
+        <a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span class='total-basket'></span></a></div>
     		</div>
     		<div class="col-sm-0 col-md-1"></div>
-		</div><hr>
+		</div><br>
 		
-		<div class="row content">
+		<div class="row card content center-block">
+      <br>
   			<div class="col-sm-0 col-md-1"></div>
-    		<div id="setPic1" class="card col-sm-12 col-md-4">
-    			<img src="mensRight.png" class="img-responsive" style="padding:20px;">
+    		<div id="setPic1" class="col-sm-12 col-md-4">
+    			<img src="mensRight.png" class="img-responsive center-block" style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
     			<br>
-    			<p>Callaway Burner OS Graphite Irons - R11 Senior Shaft Driver, Reg Woods, Rescue - Putter & Bag (29RG)
-				Gents Right-Handed</p>
-				<h1 style="color:white;" >€69.99</h1>
-				<p class="rental">Rental Price Including Delivery and Collection</p>
-				<button data-price="69.99" id="five" class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
-        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
+    			<h2>Callaway Burner OS Graphite Irons - R11 Senior Shaft Driver, Reg Woods, Rescue - Putter & Bag (29RG)
+				Gents Right-Handed</h2>
+				<h3 style="color:black;" >€69.95</h3>
+				<p class="rental" style="font-size: 10px;">Rental Price Including Delivery and Collection</p>
+				<div class ="toCart" id="cart-select"><button data-price="69.95" id="five" class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
+        <a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span class='total-basket'></span></a></div>
     		</div>
-    		<div class="col-sm-0 col-md-1"></div>
-		</div><hr>
+    		<div class="col-sm-0 col-md-1 center-block"></div>
+		</div><br>
 
-		<div class="row content">
+		<div class="row card content center-block">
+      <br>
   			<div class="col-sm-0 col-md-1"></div>
-    		<div id="MensLeft2" class="card col-sm-12 col-md-4">
-    			<img src="mensLeft.png" class="img-responsive" style="padding:20px;">
+    		<div id="MensLeft2" class="col-sm-12 col-md-4">
+    			<img src="mensLeft.png" class="img-responsive center-block" style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
     			<br>
-    			<p>Gents Left-Handed Callaway X Series Irons - X Hot Pro Reg Shaft Driver, Wood, Rescue - Putter & Bag (6LG)
-				Gents Left-Handed</p>
-				<h1 style="color:white;" >€79.99</h1>
-				<p class="rental">Rental Price Including Delivery and Collection</p>
-				<button data-price="79.99" id="six" class="button-basket sevenNine add btn btn-info btn-lg ">Add to Basket</button>
-        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
+    			<h2>Gents Left-Handed Callaway X Series Irons - X Hot Pro Reg Shaft Driver, Wood, Rescue - Putter & Bag (6LG)
+				Gents Left-Handed</h2>
+				<h3 style="color:black;" >€79.95</h3>
+				<p class="rental" style="font-size: 10px;">Rental Price Including Delivery and Collection</p>
+				<div class ="toCart" id="cart-select"><button data-price="79.95" id="six" class="button-basket sevenNine add btn btn-info btn-lg ">Add to Basket</button>
+        <a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span class='total-basket'></span></a></div>
     		</div>
     		<div class="col-sm-0 col-md-1"></div>
-		</div><hr>
+		</div><br>
 
-		<div class="row content">
+		<div class="row card content center-block">
+      <br>
   			<div class="col-sm-0 col-md-1"></div>
-    		<div id="ladiesRight2" class=" col-sm-12 col-md-4">
-    			<img class="img-responsive" src="ladiesRight.png"  style="padding:20px;">
+    		<div id="ladiesRight2" class="col-sm-12 col-md-4">
+    			<img class="img-responsive center-block" src="ladiesRight.png"  style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
     			<br>
-    			<p>Ladies Ping Solaire 8 Piece Set (Right-Handed) (6RL)
-				Ladies Right-Handed</p>
-				<h1 style="color:white;" >€69.99</h1>
-				<p class="rental">Rental Price Including Delivery and Collection</p>
-				<button data-price="69.99" id="seven" class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
-        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
+    			<h2>Ladies Ping Solaire 8 Piece Set (Right-Handed) (6RL)
+				Ladies Right-Handed</h2>
+				<h3 style="color:black;" >€69.95</h3>
+				<p class="rental" style="font-size: 10px;">Rental Price Including Delivery and Collection</p>
+				<div class ="toCart" id="cart-select"><button data-price="69.95" id="seven" class="button-basket sixNine add btn btn-info btn-lg ">Add to Basket</button>
+        <a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span class='total-basket'></span></a></div>
     		</div>
     		<div class="col-sm-0 col-md-1"></div>
-		</div><hr>
+		</div><br>
 
-		<div class="row content">
+		<div class="row card content center-block">
+      <br>
   			<div class="col-sm-0 col-md-1"></div>
-    		<div id="ladiesLeft2" class="card col-sm-12 col-md-4">
-    			<img src="ladiesLeft.png" class="img-responsive"style="padding:20px;">
+    		<div id="ladiesLeft2" class=" col-sm-12 col-md-4">
+    			<img src="ladiesLeft.png" class="img-responsive center-block"style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
     			<br>
-    			<p>Ladies Left-Handed TaylorMade X Series Irons - X Hot Pro Reg Shaft Driver, Wood, Rescue - Putter & Bag (6LG)
-				Ladies Left-Handed</p>
-				<h1 style="color:white;" >€79.99</h1>
-				<p class="rental">Rental Price Including Delivery and Collection</p>
-				<button data-price="79.99" id="eight" class="button-basket sevenNine add btn btn-info btn-lg">Add to Basket</button>
-        <div class ="toCart" id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket'></span></a></div>
+    			<h2>Ladies Left-Handed TaylorMade X Series Irons - X Hot Pro Reg Shaft Driver, Wood, Rescue - Putter & Bag (6LG)
+				Ladies Left-Handed</h2>
+				<h3 style="color:black;" >€79.95</h3>
+				<p class="rental" style="font-size: 10px;">Rental Price Including Delivery and Collection</p>
+				<div class ="toCart" id="cart-select"><button data-price="79.95" id="eight" class="button-basket sevenNine add btn btn-info btn-lg">Add to Basket</button>
+        <a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span class='total-basket'></span></a></div>
     		</div>
     		<div class="col-sm-0 col-md-1"></div>
-		</div><hr>
+		</div><br>
 	</div>
 </div>
 
@@ -503,6 +569,21 @@
       </div>
 
     </footer>
+<script type="text/javascript">
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
+</script>
 
 <script>
 
@@ -514,17 +595,17 @@ var totalPrice = 0;
 $(".button-basket").on("click", function() {
   var price = $(this).attr("data-price")
   totalPrice += parseFloat(price);
-    $('#total-basket').html("€" + totalPrice.toFixed(2)); 
+    $('.total-basket').html("€" + totalPrice.toFixed(2)); 
 })
    
-$("#one").on('click', function() {
-  localStorage.setItem("one", "Callaway X22 Irons - X Series Driver & Woods - Putter & Bag Code:11RG Gents Right-Handed" );
-  localStorage.setItem("onePic", "<img src='mensRight.png' style='padding:20px;'>");
-})
+// $("#one").on('click', function() {
+//   localStorage.setItem("one", "Callaway X22 Irons - X Series Driver & Woods - Putter & Bag Code:11RG Gents Right-Handed" );
+//   localStorage.setItem("onePic", "<img src='mensRight.png' style='padding:20px;'>");
+// })
 
 
-$("#cart-select").on("click", function() {
-      localStorage.setItem("price", totalPrice);
+$(".toCart").on("click", function() {
+      localStorage.setItem("price", totalPrice.toFixed(2));
 })
 
 
@@ -537,6 +618,10 @@ $.ajax({
   url: 'https://api.fixer.io/latest',
   dataType: "json"
 });
+
+window.onscroll = function() {scrollFunction()};
+
+
 
 
 
