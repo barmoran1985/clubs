@@ -326,7 +326,7 @@
   <p id="timeDate"></p>
   </div>
   <div style="padding:10px">
-  <img src="" style="border-radius:10px;" id='course'>
+  <img id="coursePic">
   <h2 id="name" style="color:white; "></h2>
   <p id='description'></p></div>
   </div>
@@ -359,7 +359,7 @@
 
 <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>	
 <script>
-    var course = localStorage.getItem('course');
+    var course = localStorage.getItem("course");
     var day = localStorage.getItem("day");
     var month = localStorage.getItem("month");
     var name = localStorage.getItem("name")
@@ -383,11 +383,11 @@
       $.each( data, function( index, elem ) {
         var name = elem.name;
         var description = elem.description;
-        var image = elem.image;
+        var Iimage = elem.image;
         if(name === course){
-        $("#course").attr("src", image);
-        $("#name").html(name);
-        $("#description").html(description);
+          $("#coursePic").attr('src', Iimage);
+          $("#name").html(name);
+          $("#description").html(description);
         }
 
       });
@@ -401,7 +401,7 @@
     var priceSelected = localStorage.getItem("price");
     $("#total-basket").html("€" + priceSelected);
     $("#total h1").html("Total Price: €" + priceSelected);
-    // $("#total h2").html("Total Cost: €" + priceSelected + ".");
+
     var idFX;
     $("#currencySelect").on('change', function(e) {
       e.preventDefault();
@@ -425,10 +425,10 @@
 
         });
       });
-        $("#club").on("change", function() {
-      var currentValue = $(this).val();
-      localStorage.setItem("golf-field", currentValue);
-    });
+    //     $("#club").on("change", function() {
+    //   var currentValue = $(this).val();
+    //   localStorage.setItem("golf-field", currentValue);
+    // });
 
 
 
