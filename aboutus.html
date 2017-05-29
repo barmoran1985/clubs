@@ -190,7 +190,8 @@
     margin: 20px;
   }
   #pic{
-    margin: 20px;
+    position: relative;
+    margin-top: 70px;
   }
   p{
     font-family: Tahoma;
@@ -209,18 +210,23 @@
   legend{
     color: white;
   }
-  .
-  #myCarousel {
-    height:auto;
-  }
-    .carousel-inner > .item > img{
-      margin: 0 auto;
-    }
 
-    li {
-      font-family:Verdana, fantasy;
-      font-size: 20px;
-    }
+li a .total-basket {
+  position: relative;
+  bottom: 5px;
+  left:10px;
+}
+
+  li a span.glyphicon{
+    font-size: 30px;
+    position: relative;
+    top: 0px;
+    left: 10px;
+    font-size: 20px;
+   }
+  
+
+
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
@@ -237,7 +243,7 @@
       padding: 25px;
     }
     div {
-      /*border:solid red 3px;*/
+/*      border:solid red 3px;*/
     }
     .jumbotron {
     	background-color: white;
@@ -251,7 +257,7 @@
 
 </style>
 </head>
-<body>
+<body style="background-color:white">
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -270,28 +276,65 @@
         <li class="active navText"><a href="aboutus.html">About Us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right navText">
-        <li><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span>Basket</a></li>
-        <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+
+        <li><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span><span class='total-basket'></span></a></li>
+          <li>
+
+          <div id="google_translate_element"></div>
+          </li>
+          <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+          }
+          </script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="jumbotron">
- <h1>About Us</h1>
-  <div id="googleMap" style="width:400px;height:300px;"></div>
+<div class="container" style="margin-top: 80px; border-radius: 10px; background-color: #EBEBEB;">
+  <div class="row">
+    <div class="col-lg-6 center-text">
+      <h1>About Us</h1>
+        <p style="font-family:Verdana;">Clubs 4 Hire is based in Dublin, Ireland. It was established by two avid golf enthusiasts who have played many of Ireland's 400 golf courses. It was our observation that club rental services were not up to par, as it were, as we traveled from course to course, and we thought we could do better.
 
-  <img id="pic" src="about.jpg">
-  <p style="font-family:Verdana;">Clubs 4 Hire is based in Dublin, Ireland. It was established by two avid golf enthusiasts who have played many of Ireland's 400 golf courses. It was our observation that club rental services were not up to par, as it were, as we traveled from course to course, and we thought we could do better.
+        It's a simple idea. Golfers traveling to Ireland could free themselves of having to bring their own golf clubs with them, and avoid the excess baggage charges of airlines, the inconvenience of carrying that extra luggage and the risk of losing them in transit. Instead, we'd provide the service of delivering a full set of clubs to the golfer at the airport, at their accommodations or at the golf course, and retrieve them when the round was completed.
+        We offer a wide variety of club sets to choose from, including Ping, Cobra, Callaway, Cleveland, Nike, Ben Sayers and Mizuno, with choices in several different price categories. Golfers can mix and match from among these choices, too, for irons, woods and putters.
 
-  It's a simple idea. Golfers traveling to Ireland could free themselves of having to bring their own golf clubs with them, and avoid the excess baggage charges of airlines, the inconvenience of carrying that extra luggage and the risk of losing them in transit. Instead, we'd provide the service of delivering a full set of clubs to the golfer at the airport, at their accommodations or at the golf course, and retrieve them when the round was completed.
-  We offer a wide variety of club sets to choose from, including Ping, Cobra, Callaway, Cleveland, Nike, Ben Sayers and Mizuno, with choices in several different price categories. Golfers can mix and match from among these choices, too, for irons, woods and putters.
-
-  Why not simply leave your clubs at home, travel lighter, and allow us to take care of your golf club needs. What could be more simple? Select your set, tell us where to delivery it and when, and we'll take care of the rest for you.</p>
+        Why not simply leave your clubs at home, travel lighter, and allow us to take care of your golf club needs. What could be more simple? Select your set, tell us where to delivery it and when, and we'll take care of the rest for you.</p>
+      </div>
+    
+    <div class="col-md-6"><img id="pic" src="about.jpg" style="border-radius: 10px;" class="img-responsive center-block"></div>
 </div>
+  <br><br>
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Location</h1>
+      <p>Clubs 4 Hire offices and warehouse are located opposite the state-of-the-art Studebaker building in Rathfarnham.<br><br>
 
+        We are served by the following buses:<br><br>
+        14A, 15, 15A, 64b.<br><br>
 
+        
 
+        Our mailing address is:<br><br>
+
+        36 Llewellyn Way<br>
+        Ballinteer,<br> 
+        Dublin 16,<br>
+        Republic of Ireland.<br>
+        085 555 123456<br><br>
+        barmoran@clubs4hire.com</p>
+    </div>
+    <div class="col-md-6"><div id="googleMap" style="width:450px;height:300px;" class="img-responsive center-block"></div></div>  
+
+  </div><br>
+</div>
+  </div>
     <footer class="footer-distributed">
 
       <div class="footer-left">

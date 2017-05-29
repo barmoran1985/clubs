@@ -194,6 +194,9 @@
   #currency{
     color: white;
   }
+  #currencySelect {
+    color: black;
+  }
 
   #buttonPay{
     position: relative;
@@ -325,10 +328,10 @@
   <p id="detailCustomer"></p>
   <p id="timeDate"></p>
   </div>
-  <div style="padding:10px">
+  
   <img id="coursePic">
-  <h2 id="name" style="color:white; "></h2>
-  <p id='description'></p></div>
+  <h2 id="name" style="color:white"></h2>
+  <p id='description'></p>
   </div>
 <div class="row" id="firstSelect">  
   <div id="clubPic1" class="basket col-md-6 text-center" style="padding:0;"></div>
@@ -381,13 +384,13 @@
     })
     .success( function(data) {
       $.each( data, function( index, elem ) {
-        var name = elem.name;
-        var description = elem.description;
-        var Iimage = elem.image;
+        var a = elem.name;
+        var b = elem.description;
+        var c = elem.image;
         if(name === course){
-          $("#coursePic").attr('src', Iimage);
-          $("#name").html(name);
-          $("#description").html(description);
+          $("#coursePic").attr('src', c);
+          $("#name").html(a);
+          $("#description").html(b);
         }
 
       });
