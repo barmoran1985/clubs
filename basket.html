@@ -9,6 +9,32 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+#total {
+position: relative;
+bottom: 5px;
+font-size: 14px;
+}
+
+#cart-select{
+  position: relative;
+  right: 15px;
+}
+
+
+li a .total-basket {
+  position: relative;
+  bottom: 5px;
+  left:10px;
+}
+
+
+nav li a span.glyphicon{
+  font-size: 30px;
+  position: relative;
+  top: -1px;
+  left: 0px;
+  font-size: 20px;
+ }
 /*  -----------FOOTER CSS--------------*/
 
 .footer-distributed{
@@ -247,36 +273,37 @@
       margin: 0 auto;
     }
 
-    li {
-      font-family:Verdana, fantasy;
-      font-size: 20px;
-    }
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      position: fixed-relative;
-      /*height:100px;*/
-    }
+  li {
 
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      color:white;
-      background-color: #222222;
-      padding: 25px;
-    }
-    div {
-      /*border:solid red 3px;*/
-    }
-    .jumbotron {
-    	background-color: black;
-      margin-bottom: 0px;
-    }
+    font-size: 14px;
+  }
+  /* Remove the navbar's default margin-bottom and rounded borders */
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    position: fixed-relative;
+    /*height:100px;*/
+  }
 
-    .navText{
-      text-align: right;
-    }
+  
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    color:white;
+    background-color: #222222;
+    padding: 25px;
+  }
+  div {
+    /*border:solid red 3px;*/
+  }
+  .jumbotron {
+  	background-color: black;
+    margin-bottom: 0px;
+  }
+
+  .navText{
+
+    font-size: 14px;
+  }
 
 </style>
 </head>
@@ -299,7 +326,7 @@
         <li class="navText"><a href="aboutus.html">About Us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right navText">
-        <li id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span id='total-basket' style="color:white;"></span></a></li>
+        <li id="cart-select"><a href="basket.html"><span class="glyphicon glyphicon-shopping-cart" style="color: white"></span><span id='total' style="color:white;"></span></a></li>
         <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
       </ul>
     </div>
@@ -402,7 +429,7 @@
 
 
     var priceSelected = localStorage.getItem("price");
-    $("#total-basket").html("€" + priceSelected);
+    $("#total").html("€" + priceSelected);
     $("#total h1").html("Total Price: €" + priceSelected);
 
     var idFX;
