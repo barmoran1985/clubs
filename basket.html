@@ -9,6 +9,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+#credit {
+  position: relative;
+  top: 50px;
+}
+
 #buttonPay {
   margin: 50px;
   position: relative;
@@ -377,7 +382,7 @@ nav li a span.glyphicon{
     </div>
   </div>
 <div class="container text-center" style="background-color: #EAEAEA; border-radius: 10px; margin-top: 10px;">
-  <div class="row" id="colTitle">
+  <div class="row" id="colTitle" style="border-bottom: solid grey 3px">
     <div class="col-md-2 hidden-sm hidden-xs"><h3></h3></div>
     <div class="col-md-5 hidden-sm hidden-xs"><h3>Item</h3></div>
     <div class="col-md-2 hidden-sm hidden-xs"><h3>Quantity</h3></div>
@@ -453,9 +458,10 @@ nav li a span.glyphicon{
 
   </div><br>
 </div>
-
-    <div class="container text-center" style="background-color: #EAEAEA; border-radius: 10px; margin-top: 10px;">
-      <div class="col-sm-12 totals">
+    <div class="row">
+    <div class="col-sm-8 text-center"><img id="credit" class="hidden-xs" src="credit.png" style="width: 450px"></div>
+    <div class="container col-sm-3 text-center" style="background-color: #EAEAEA; border-radius: 10px; margin-top: 10px; margin-right: 10px;">
+      <div class=" totals">
         <div class="totals-item">
           <br>
           <label>Subtotal</label>
@@ -469,7 +475,6 @@ nav li a span.glyphicon{
           <label>Grand Total</label>
           <div class="totals-value cart-total"></div>
         </div>
-        <div class=""></div>
           <select name="monies" id="currencySelect"> 
           <option value="select">Currency</option>         
           <option value="GBP">GBP</option>
@@ -483,7 +488,8 @@ nav li a span.glyphicon{
 
       </div>
     </div>
-</div>
+    </div>
+
 
 
 
