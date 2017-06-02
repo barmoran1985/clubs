@@ -9,6 +9,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+.cart-row {
+  vertical-align: middle;
+}
+
 #total {
 position: relative;
 bottom: 5px;
@@ -260,7 +264,7 @@ nav li a span.glyphicon{
     background-color: black;
   }
   p{
-    color: white;
+    color: black;
   }
   h1{
     color: white;
@@ -293,7 +297,7 @@ nav li a span.glyphicon{
     padding: 25px;
   }
   div {
-    /*border:solid red 3px;*/
+/*    border:solid red 3px;*/
   }
   .jumbotron {
   	background-color: black;
@@ -345,59 +349,320 @@ nav li a span.glyphicon{
     </div>
   </div>
 </nav>
+<br><br>
 
-<div class="jumbotron text-center">
-<div class="row">
-  <div id="total" class="basket col-md-12 text-center">
+<br><h1 style="color:black; position: relative; left: 30px;">Your Basket</h1>
+
+<div class="container text-center" style="background-color: #EAEAEA; border-radius: 10px; margin-top: 40px;">
+  <div class="row" id="colTitle">
+    <div class="col-md-2 hidden-sm hidden-xs"><h3></h3></div>
+    <div class="col-md-5 hidden-sm hidden-xs"><h3>Item</h3></div>
+    <div class="col-md-2 hidden-sm hidden-xs"><h3>Quantity</h3></div>
+    <div class="col-md-3 hidden-sm hidden-xs"><h3>Price</h3></div>
+  </div>
+
+  <div class="row" id="item1">
+    <div class="col-md-2"><img id="pic1"></div>
+    <div class="col-md-5" id="des1"></div>
+    <div class="col-md-2" id="quant1"></div>
+    <div class="col-md-3" id="price1"></div>
+
+  </div>
+
+  <div class="row" id="item2">
+    <div class="col-md-2"><img id="pic2"></div>
+    <div class="col-md-5" id="des2"></div>
+    <div class="col-md-2" id="quant2"></div>
+    <div class="col-md-3" id="price2"></div>
+
+  </div>
+
+  <div class="row" id="item3">
+    <div class="col-md-2"><img id="pic3"></div>
+    <div class="col-md-5" id="des3"></div>
+    <div class="col-md-2" id="quant3"></div>
+    <div class="col-md-3" id="price3"></div>
+
+  </div>
+
+  <div class="row" id="item4">
+    <div class="col-md-2"><img id="pic4"></div>
+    <div class="col-md-5" id="des4"></div>
+    <div class="col-md-2" id="quant4"></div>
+    <div class="col-md-3" id="price4"></div>
+  </div>
+
+
+  <div class="row" id="item5">
+    <div class="col-md-2"><img id="pic5"></div>
+    <div class="col-md-5" id="des5"></div>
+    <div class="col-md-2" id="quant5"></div>
+    <div class="col-md-3" id="price5"></div>
+  </div>
+
+  <div class="row" id="item6">
+    <div class="col-md-2"><img id="pic6"></div>
+    <div class="col-md-5" id="des6"></div>
+    <div class="col-md-2" id="quant6"></div>
+    <div class="col-md-3" id="price6"></div>
+
+  </div>
+
+  <div class="row" id="item7">
+    <div class="col-md-2"><img id="pic7"></div>
+    <div class="col-md-5" id="des7"></div>    
+    <div class="col-md-2" id="quant7"></div>
+    <div class="col-md-3" id="price7"></div>
+
+  </div>
+
+  <div class="row" id="item8">
+    <div class="col-md-2"><img id="pic8"></div>
+    <div class="col-md-5" id="des8"></div>    
+    <div class="col-md-2" id="quant8"></div>
+    <div class="col-md-3" id="price8"></div>
+
+  </div><br>
+
   
-  <form action="#" id="currency">
-    <fieldset>
-      <div id="blackBorder">
-        <label for="currency">Currency</label>
-        <select name="monies" id="currencySelect"> 
-          <option value="select">Currency</option>         
-          <option value="GBP">GBP</option>
-          <option value="USD" >USD</option>
-          <option value="CAD">CAD</option>
-        </select>
+  <div class="row">
+    <div class="col-sm-9">
+      <p></p>
+      <p id="detailCustomer"></p>
+      <p id="timeDate"></p>
+      <img id="coursePic">
+      <h2 id="name"></h2>
+      <p id='description'></p>
+    </div>
+
+    
+  <div class="col-sm-3">
+  <div class="text-center">
+    <div class="totals">
+        <div class="totals-item">
+          <label>Subtotal</label>
+          <div class="totals-value cart-total"></div>
+        </div>
+        <div class="totals-item">
+          <label>Shipping</label>
+          <div class="totals-value" id="cart-shipping">0.00</div>
+        </div>
+        <div class="totals-item totals-item-total">
+          <label>Grand Total</label>
+          <div class="totals-value cart-total"></div>
+        </div>
+          <label></label>
+          <div class=""></div>
+            <select name="monies" id="currencySelect"> 
+            <option value="select">Currency</option>         
+            <option value="GBP">GBP</option>
+            <option value="USD" >USD</option>
+            <option value="CAD">CAD</option>
+            </select>
+            <div id="currencyTotal"></div>
+        </div>
+    </div>
+      
+      <a href="payment.html"><button id="buttonPay" class="btn btn-info btn-lg">Payment</button></a>
+    </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+
+
+
+
+
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <a href="index.html"><img src="logo.jpg" style="height: 70px; border-radius: 10px;"></a>
+
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          ·
+          <a href="available.html">Pricing</a>
+          ·
+          <a href="#">About Us</a>
+        </p>
+
+        <p class="footer-company-name">Clubs 4 Hire &copy; 2017</p>
       </div>
- 
-  </form><h1></h1><h2></h2><br>
-  </fieldset>
-  <p>Rental Price Including Delivery and Collection</p>
-  <p id="detailCustomer"></p>
-  <p id="timeDate"></p>
-  </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>36 Llewellyn Way</span> Ballinteer, Dublin 16</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>085 555 123456</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:barmoran@clubs4hire.com">barmoran@clubs4hire.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <img src="credit-cards.jpg" style="height: 30px;">
+
+        <div class="footer-icons">
+
+          <a href="https://www.facebook.com/clubsforhire.ireland?fref=ts"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/Clubs4Hire"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.youtube.com/clubs4hire"><i class="fa fa-youtube"></i></a>
+      </div>
+
+      </div>
+
+    </footer>
+
+<script>
+    var pic1 = localStorage.getItem("pic1");
+    var des1 = localStorage.getItem("des1");
+    var price1 = localStorage.getItem("price1");
+    var quant1 = localStorage.getItem("count1");
+    var len1 = quant1.length;
+    var mult1 = price1 * len1;
+    if(len1 !== NaN){
+      $("#pic1").attr('style', 'width:100px').attr('src', pic1);
+      $("#des1").html(des1);
+      $("#price1").html("$" + mult1.toFixed(2));
+      $("#quant1").html(len1 + " (@ €69.95 each)");
+    }
+  </script>   
+  <script>
+    var pic2 = localStorage.getItem("pic2");
+    var des2 = localStorage.getItem("des2");
+    var price2 = localStorage.getItem("price2");
+    var quant2 = localStorage.getItem("count2");
+    var len2 = quant2.length;
+    var mult2 = price2 * len2;
+    if(len2 !== NaN){
+      $("#pic2").attr('style', 'width:100px').attr('src', pic2);
+      $("#des2").html(des2);
+      $("#price2").html("$" + mult2.toFixed(2));
+      $("#quant2").html(len2 + " (@ €79.95 each)");
+    }
+  </script> 
+  <script>
+    var pic3 = localStorage.getItem("pic3");
+    var des3 = localStorage.getItem("des3");
+    var price3 = localStorage.getItem("price3");
+    var quant3 = localStorage.getItem("count3");
+    var len3 = quant3.length;
+    var mult3 = price3 * len3;
+    if(len3 === NaN){
+      $("#pic3").attr('style', 'width:100px').attr('src', pic3);
+      $("#des3").html(des3);
+      $("#price3").html("$" + mult3.toFixed(2));
+      $("#quant3").html(len3 + " (@ €79.95 each)");
+    }
+</script>
+<script>
+    var pic4 = localStorage.getItem("pic4");
+    var des4 = localStorage.getItem("des4");
+    var price4 = localStorage.getItem("price4");
+    var quant4 = localStorage.getItem("count4");
+    var len4 = quant4.length;
+    var mult4 = price4 * len4;
+    if(len4 !== NaN){
+      $("#pic4").attr('style', 'width:100px').attr('src', pic4);
+      $("#des4").html(des4);
+      $("#price4").html("$" + mult4.toFixed(2));
+      $("#quant4").html(len4 + " (@ €69.95 each)");
+    }
+</script>
+<script>
+    var pic5 = localStorage.getItem("pic5");
+    var des5 = localStorage.getItem("des5");
+    var price5 = localStorage.getItem("price5");
+    var quant5 = localStorage.getItem("count5");
+    var len5 = quant5.length;
+    var mult5 = price5 * len5;
+    if(len5 !== NaN){
+      $("#pic5").attr('style', 'width:100px').attr('src', pic5);
+      $("#des5").html(des5);
+      $("#price5").html("$" + mult5.toFixed(2));
+      $("#quant5").html(len5 + " (@ €69.95 each)");
+    }
+</script>
+<script>
+    var pic6 = localStorage.getItem("pic6");
+    var des6 = localStorage.getItem("des6");
+    var price6 = localStorage.getItem("price6");
+    var quant6 = localStorage.getItem("count6");
+    var len6 = quant6.length;
+    var mult6 = price6 * len6;
+    if(len6 !== NaN){
+      $("#pic6").attr('style', 'width:100px').attr('src', pic6);
+      $("#des6").html(des6);
+      $("#price6").html("$" + mult6.toFixed(2));
+      $("#quant6").html(len6 + " (@ €79.95 each)");
+    }
+</script>
+
+<script>
+    var pic7 = localStorage.getItem("pic7");
+    var des7 = localStorage.getItem("des7");
+    var price7 = localStorage.getItem("price7");
+    var quant7 = localStorage.getItem("count7");
+    var len7 = quant7.length;
+    var mult7 = price7 * len7;
+    if(len7 !== NaN){
+      $("#pic7").attr('style', 'width:100px').attr('src', pic7);
+      $("#des7").html(des7);
+      $("#price7").html("$" + mult7.toFixed(2));
+      $("#quant7").html(len7 + " (@ €69.95 each)");
+    }
+</script>
   
-  <img id="coursePic">
-  <h2 id="name" style="color:white"></h2>
-  <p id='description'></p>
-  </div>
-<div class="row" id="firstSelect">  
-  <div id="clubPic1" class="basket col-md-6 text-center" style="padding:0;"></div>
-  <div id="club-info1" class="basket col-md-6 text-center" style="padding:0;"></div>
-</div>
+<script>
+    var pic8 = localStorage.getItem("pic8");
+    var des8 = localStorage.getItem("des8");
+    var price8 = localStorage.getItem("price8");
+    var quant8 = localStorage.getItem("count8");
+    var len8 = quant8.length;
+    var mult8 = price8 * len8;
+    if(len8 !== NaN){
+    $("#pic8").attr('style', 'width:100px').attr('src', pic8);
+    $("#des8").html(des8);
+    $("#price8").html("$" + mult8.toFixed(2));
+    $("#quant8").html(len8 + " (@ €79.95 each)");
+    }
+</script>
 
-<div class="row" id="secondSelect">  
-  <div id="clubPic1" class="basket col-md-6 text-center" style="padding:0;"></div>
-  <div id="club-info1" class="basket col-md-6 text-center" style="padding:0;"></div>
-</div>
+<script>
+      $.ajax({
+      url: '../golfCourses.json',
+      dataType: 'json'
+    })
+    .success( function(data) {
 
-<div class="row" id="thirdSelect">  
-  <div id="clubPic1" class="basket col-md-6 text-center" style="padding:0;"></div>
-  <div id="club-info1" class="basket col-md-6 text-center" style="padding:0;"></div>
-</div>
+      $.each( data, function( index, elem ) {
+        var coursePick = localStorage.getItem("course");
+        var a = elem.name;
+        var b = elem.description;
+        var c = elem.image;
+        if(a === coursePick){
+          $("#coursePic").attr('src', c);
+          $("#name").html(a);
+          $("#description").html(b);
+        }
 
-
-
-<a href="payment.html"><button id="buttonPay" class="btn btn-info btn-lg">Payment</button></a>
-</div>
-
-<footer class="container-fluid text-center">
-  <p>Clubs4Hire™</p>
-  <br>
-  <a href="basket.html">Top</a>
-</footer>
+      });
+      
+    })
+</script>
 
 
 <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>	
@@ -415,35 +680,12 @@ nav li a span.glyphicon{
 });
     var email = localStorage.getItem("email")
     $("#timeDate").html("Your clubs will be delivered to " + course + " prior to 8am on " + day + " " + month + ".");
-    $("#detailCustomer").html(nameCap + " " + surnameCap + ": " + " eMail: " + email + ".");
+    $("#detailCustomer").html("Name: " + nameCap + " " + surnameCap + "<br> Email: " + email);
     
-    console.log(course);
-    $.ajax({
-      url: 'golfCourses.json',
-      dataType: 'json'
-    })
-    .success( function(data) {
-      $.each( data, function( index, elem ) {
-        var a = elem.name;
-        var b = elem.description;
-        var c = elem.image;
-        if(name === course){
-          $("#coursePic").attr('src', c);
-          $("#name").html(a);
-          $("#description").html(b);
-        }
-
-      });
-      
-    })
-    var fieldSelected = localStorage.getItem("golf-field");
-    $("#clubPic h2").html(fieldSelected);
-
-
 
     var priceSelected = localStorage.getItem("price");
     $("#total").html("€" + priceSelected);
-    $("#total h1").html("Total Price: €" + priceSelected);
+    $(".cart-total").html("€" + priceSelected);
 
     var idFX;
     $("#currencySelect").on('change', function(e) {
@@ -460,18 +702,18 @@ nav li a span.glyphicon{
       .success(function(dataFX) {
         console.log(dataFX);
         var rate = dataFX.rates[idFX];
-        var finalPrice = priceSelected * rate
+        var finalPrice = priceSelected * rate;
         var roundedFinalPrice = Math.round(finalPrice * 100) / 100;
-        $("#total h2").html("= " + Object.keys(dataFX.rates) + " " + roundedFinalPrice + "");
+        $("#currencyTotal").html(Object.keys(dataFX.rates) + " " + roundedFinalPrice + "");
           localStorage.setItem("finalCurrency", Object.keys(dataFX.rates));
           localStorage.setItem("finalFigure", roundedFinalPrice);
 
         });
       });
-    //     $("#club").on("change", function() {
-    //   var currentValue = $(this).val();
-    //   localStorage.setItem("golf-field", currentValue);
-    // });
+        $("#club").on("change", function() {
+      var currentValue = $(this).val();
+      localStorage.setItem("golf-field", currentValue);
+    });
 
 
 
