@@ -16,6 +16,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+
+  p {
+      font-family: arial; 
+  }
+
+  h1 {
+      font-family: arial; 
+  }
     #total {
     position: relative;
     bottom: 5px;
@@ -545,18 +553,18 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
                   <span class="input-group-addon"><i class="fa fa-calendar fa" aria-hidden="true"></i></span>
                   <select name="month" id="monthSelect" class="picker"> 
                     <option value="select">  Select Month of Delivery</option>         
-                    <option value="Sep 2016">Sep 2016</option>
-                    <option value="Oct 2016" >Oct 2016</option>
-                    <option value="Nov 2016">Nov 2016</option>
-                    <option value="Dec 2016">Dec 2016</option>
-                    <option value="Jan 2017" >Jan 2017</option>
-                    <option value="Feb 2017">Feb 2017</option>
-                    <option value="Mar 2017">Mar 2017</option>
-                    <option value="Apr 2017" >Apr 2017</option>
-                    <option value="May 2017">May 2017</option>
-                    <option value="Jun 2017">Jun 2017</option>
-                    <option value="Jul 2017" >Jul 2017</option>
-                    <option value="Aug 2017">Aug 2017</option>
+                    <option value="Sep 2016">Sep 2017</option>
+                    <option value="Oct 2016" >Oct 2017</option>
+                    <option value="Nov 2016">Nov 2017</option>
+                    <option value="Dec 2016">Dec 2017</option>
+                    <option value="Jan 2017" >Jan 2018</option>
+                    <option value="Feb 2017">Feb 2018</option>
+                    <option value="Mar 2017">Mar 2018</option>
+                    <option value="Apr 2017" >Apr 2018</option>
+                    <option value="May 2017">May 2018</option>
+                    <option value="Jun 2017">Jun 2018</option>
+                    <option value="Jul 2017" >Jul 2018</option>
+                    <option value="Aug 2017">Aug 2018</option>
                   </select>
                 </div>
               </div>
@@ -664,7 +672,7 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
 
     var priceSelected = localStorage.getItem("price");
     if(priceSelected === null){
-      $("#total").html("€0.00");
+      $("#total").html("");
     }
     else{
       $("#total").html("€" + priceSelected);

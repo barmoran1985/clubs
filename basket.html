@@ -556,7 +556,7 @@ nav li a span.glyphicon{
     if(len1 !== NaN){
       $("#pic1").attr('style', 'width:100px').attr('src', pic1);
       $("#des1").html(des1);
-      $("#price1").html("$" + mult1.toFixed(2) +"<br><hr><br>");
+      $("#price1").html("€" + mult1.toFixed(2) +"<br><hr><br>");
       $("#quant1").html(len1 + " (@ €69.95 each)");
     }
   </script>   
@@ -570,7 +570,7 @@ nav li a span.glyphicon{
     if(len2 !== NaN){
       $("#pic2").attr('style', 'width:100px').attr('src', pic2);
       $("#des2").html(des2);
-      $("#price2").html("$" + mult2.toFixed(2) +"<br><hr><br>");
+      $("#price2").html("€" + mult2.toFixed(2) +"<br><hr><br>");
       $("#quant2").html(len2 + " (@ €79.95 each)");
     }
   </script> 
@@ -584,7 +584,7 @@ nav li a span.glyphicon{
     if(len3 !== NaN){
       $("#pic3").attr('style', 'width:100px').attr('src', pic3);
       $("#des3").html(des3);
-      $("#price3").html("$" + mult3.toFixed(2) +"<br><hr><br>");
+      $("#price3").html("€" + mult3.toFixed(2) +"<br><hr><br>");
       $("#quant3").html(len3 + " (@ €79.95 each)");
     }
 </script>
@@ -598,7 +598,7 @@ nav li a span.glyphicon{
     if(len4 !== NaN){
       $("#pic4").attr('style', 'width:100px').attr('src', pic4);
       $("#des4").html(des4);
-      $("#price4").html("$" + mult4.toFixed(2) +"<br><hr><br>");
+      $("#price4").html("€" + mult4.toFixed(2) +"<br><hr><br>");
       $("#quant4").html(len4 + " (@ €69.95 each)");
     }
 </script>
@@ -612,7 +612,7 @@ nav li a span.glyphicon{
     if(len5 !== NaN){
       $("#pic5").attr('style', 'width:100px').attr('src', pic5);
       $("#des5").html(des5);
-      $("#price5").html("$" + mult5.toFixed(2) +"<br><hr><br>");
+      $("#price5").html("€" + mult5.toFixed(2) +"<br><hr><br>");
       $("#quant5").html(len5 + " (@ €69.95 each)");
     }
 </script>
@@ -626,7 +626,7 @@ nav li a span.glyphicon{
     if(len6 !== NaN){
       $("#pic6").attr('style', 'width:100px').attr('src', pic6);
       $("#des6").html(des6);
-      $("#price6").html("$" + mult6.toFixed(2) +"<br><hr><br>");
+      $("#price6").html("€" + mult6.toFixed(2) +"<br><hr><br>");
       $("#quant6").html(len6 + " (@ €79.95 each)");
     }
 </script>
@@ -641,7 +641,7 @@ nav li a span.glyphicon{
     if(len7 !== NaN){
       $("#pic7").attr('style', 'width:100px').attr('src', pic7);
       $("#des7").html(des7);
-      $("#price7").html("$" + mult7.toFixed(2) +"<br><hr><br>");
+      $("#price7").html("€" + mult7.toFixed(2) +"<br><hr><br>");
       $("#quant7").html(len7 + " (@ €69.95 each)");
     }
 </script>
@@ -656,7 +656,7 @@ nav li a span.glyphicon{
     if(len8 !== NaN){
     $("#pic8").attr('style', 'width:100px').attr('src', pic8);
     $("#des8").html(des8);
-    $("#price8").html("$" + mult8.toFixed(2) +"<br><hr><br>");
+    $("#price8").html("€" + mult8.toFixed(2) +"<br><hr><br>");
     $("#quant8").html(len8 + " (@ €79.95 each)");
     }
 </script>
@@ -726,14 +726,10 @@ nav li a span.glyphicon{
         var roundedFinalPrice = Math.round(finalPrice * 100) / 100;
         $("#currencyTotal").html(Object.keys(dataFX.rates) + " " + roundedFinalPrice + "");
           localStorage.setItem("finalCurrency", Object.keys(dataFX.rates));
-          localStorage.setItem("finalFigure", roundedFinalPrice);
+          localStorage.setItem("finalFigure", roundedFinalPrice.toFixed(2));
 
         });
       });
-        $("#club").on("change", function() {
-      var currentValue = $(this).val();
-      localStorage.setItem("golf-field", currentValue);
-    });
 
 
 

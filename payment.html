@@ -313,7 +313,6 @@ body { margin-top:20px; }
 </style>
 </head>
 <body>
-
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -421,7 +420,7 @@ body { margin-top:20px; }
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <a href="paymentSuccessful.html" type="button" id="buttonPay" class="btn btn-info btn-lg btn-block login-button">Submit Payment</a> 
+                    <a href="paymentSuccessful.html" type="button" id="buttonPay" class="btn btn-info btn-lg btn-block login-button">Proceed to Payment</a> 
                 </div>
             </div>
             <div class="row" style="display:none;">
@@ -495,7 +494,7 @@ body { margin-top:20px; }
 if( localStorage.getItem("finalCurrency") ) {
     var final = localStorage.getItem('finalCurrency');
     var figure = localStorage.getItem('finalFigure');
-    $("#displayFinal").html(final + " " + figure);
+    $("#displayFinal").html("Total Amount: " + final + " " + figure);
 }
 else {
     var final = localStorage.getItem('price');  
