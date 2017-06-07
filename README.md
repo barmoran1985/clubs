@@ -1,5 +1,5 @@
 # clubs
-<img src="images/logo.jpeg" alt="logo">
+<img src="images/logo.jpg" alt="logo">
 This project consists of the front end of a website aimed at renting/delivering golf clubs.<br>The site allows users to 
 enter personal details, pick their clubs, view their basket details, choose currency they wish to pay in and
 finally fill out a payment form to complete payment.<br>
