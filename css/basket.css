@@ -1,0 +1,150 @@
+#credit {
+  position: relative;
+  top: 50px;
+}
+
+#buttonPay {
+  margin: 50px;
+  position: relative;
+  bottom: 90px;
+  right: 50px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.textProd {
+  position: relative;
+  top:20px;
+}
+
+#total {
+	position: relative;
+	bottom: 5px;
+	font-size: 14px;
+}
+
+#cart-select{
+  position: relative;
+  right: 15px;
+}
+
+
+li a .total-basket {
+  position: relative;
+  bottom: 5px;
+  left:10px;
+}
+
+
+nav li a span.glyphicon{
+  font-size: 30px;
+  position: relative;
+  top: -1px;
+  left: 0px;
+  font-size: 20px;
+ }
+
+#blackBorder{
+	position: relative;
+	top: 20px;
+}
+
+#blackBorder{
+	display: inline-block;
+}
+#total h2{
+	color: white;
+	size: 30px;
+}
+#currency{
+	color: white;
+}
+#currencySelect {
+	color: black;
+}
+
+#buttonPay{
+	position: relative;
+	top:20px;
+}
+
+.basket{
+	padding:30px;
+}
+
+#head{
+	background-color: #5BC0DE;
+	display: inline-block;
+	padding: 10px;
+	border-radius:10px;
+}
+
+.add {
+	position:relative;
+}
+
+#header {
+	margin-top:100px;
+}
+
+.card {
+	background-color: grey;
+	border-radius: 10px; 	
+}
+
+p {
+	font-family: Verdana;
+	color: black;
+}
+
+#logo {
+	border-radius:10px;
+	position: relative;
+	bottom: 10px;
+}
+
+.black {
+	background-color: black;
+}
+
+h1 {
+color: white;
+}
+
+
+#myCarousel {
+height:auto;
+}
+
+.carousel-inner > .item > img{
+  margin: 0 auto;
+}
+
+li {
+	font-size: 14px;
+}
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	position: fixed-relative;
+	/*height:100px;*/
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+	color:white;
+	background-color: #222222;
+	padding: 25px;
+}
+
+.jumbotron {
+	background-color: black;
+	margin-bottom: 0px;
+}
+
+.navText{
+	font-size: 14px;
+}

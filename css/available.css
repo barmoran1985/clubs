@@ -1,0 +1,134 @@
+
+.jumbotron div a .total-basket {
+	position: relative;
+	left:5px;
+	bottom: 10px;
+	font-size: 30px;
+}
+
+li a .total-basket {
+	position: relative;
+	bottom: 5px;
+	left:0px;
+	font-size: 14px;
+}
+
+.toCart {
+	position: relative;
+	left: 0px;
+}
+
+.card img {
+	position: relative;
+	top: 10px;
+	margin-bottom: 30px;
+}
+
+.button-basket {
+	background-color:#559BDE; 
+}
+
+.button-basket:hover {
+	background-color:#555; 
+}
+
+.rental {
+	font-size: 5px;	
+}
+
+#myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: #559BDE; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+li a span.glyphicon{
+	font-size: 20px;
+	position: relative;
+	top: -1px;
+	left: 0px;
+}
+
+.jumbotron div a span.glyphicon{
+	font-size: 40px;
+	position: relative;
+	bottom: 20px;
+}
+
+#cart-select{
+	position: relative;
+	bottom: 10px;
+	right: 15px;
+}
+
+#head{
+  	background-color: #5BC0DE;
+  	display: inline-block;
+  	padding: 10px;
+  	border-radius:10px;
+}
+
+.add{
+	position:relative;
+}
+
+#header{
+	margin-top:100px;
+}
+
+.card{
+	background-color: #EBEBEB;
+	border-radius: 10px; 	
+width: 95%;
+}
+
+#logo{
+	border-radius:10px;
+	position: relative;
+	bottom: 10px;
+}
+
+.black{
+	background-color: black;
+}
+
+p{
+	color: black;
+}
+
+h1{
+	color: black;
+}
+
+li {
+  font-size: 14px;
+}
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+
+.jumbotron {
+	background-color: white;
+  margin-bottom: 0px;
+}
+
+.navText{
+  text-align: right;
+}
+

@@ -3,326 +3,14 @@
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Clubs4Hire.ie</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/available.css">
   	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
   	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  .jumbotron div a .total-basket {
-    position: relative;
-    left:5px;
-    bottom: 10px;
-    font-size: 30px;
-  }
 
-  li a .total-basket {
-  position: relative;
-  bottom: 5px;
-  left:0px;
-  font-size: 14px;
-}
-
-  .toCart {
-    position: relative;
-    left: 0px;
-  }
-
-    .card img {
-    position: relative;
-    top: 10px;
-    margin-bottom: 30px;
-  }
-
-  .button-basket {
-    background-color:#559BDE; 
-  }
-
-  .button-basket:hover {
-  background-color:#555; 
-}
-
-  .rental {
-    font-size: 5px;
-  }
-
-
-  #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #559BDE; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-}
-
-#myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-}
-
-  /*  -----------FOOTER CSS--------------*/
-
-.footer-distributed{
-  background-color: #292c2f;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  font: bold 16px sans-serif;
-  padding: 55px 50px;
-  margin-top: 80px;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-  display: inline-block;
-  vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-  width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3{
-  color:  #ffffff;
-  font: normal 36px 'Cookie', cursive;
-  margin: 0;
-}
-
-.footer-distributed h3 span{
-  color:  #5383d3;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-  color:  #ffffff;
-  margin: 20px 0 12px;
-  padding: 0;
-}
-
-.footer-distributed .footer-links a{
-  display:inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color:  inherit;
-}
-
-.footer-distributed .footer-company-name{
-  color:  #8f9296;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-  width: 35%;
-}
-
-.footer-distributed .footer-center i{
-  background-color:  #33383b;
-  color: #ffffff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-  font-size: 17px;
-  line-height: 38px;
-}
-
-.footer-distributed .footer-center p{
-  display: inline-block;
-  color: #ffffff;
-  vertical-align: middle;
-  margin:0;
-}
-
-.footer-distributed .footer-center p span{
-  display:block;
-  font-weight: normal;
-  font-size:14px;
-  line-height:2;
-}
-
-.footer-distributed .footer-center p a{
-  color:  #5383d3;
-  text-decoration: none;;
-}
-
-
-/* Footer Right */
-
-.footer-distributed .footer-right{
-  width: 20%;
-}
-
-.footer-distributed .footer-company-about{
-  line-height: 20px;
-  color:  #92999f;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-  display: block;
-  color:  #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-  margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color:  #33383b;
-  border-radius: 2px;
-
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-
-  margin-right: 3px;
-  margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-  .footer-distributed{
-    font: bold 14px sans-serif;
-  }
-
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .footer-distributed .footer-center i{
-    margin-left: 0;
-  }
-}
-
-/*  -----------FOOTER CSS--------------*/
-
-  li a span.glyphicon{
-    font-size: 20px;
-    position: relative;
-    top: -1px;
-    left: 0px;
-
-   }
-
-  .jumbotron div a span.glyphicon{
-    font-size: 40px;
-    position: relative;
-    bottom: 20px;
-
-   }
-   #cart-select{
-    position: relative;
-    bottom: 10px;
-    right: 15px;
-   }
-
-  #head{
-  	background-color: #5BC0DE;
-  	display: inline-block;
-  	padding: 10px;
-  	border-radius:10px;
-  }
-  .add{
-  	position:relative;
-  }
-  #header{
-  	margin-top:100px;
-  }
-  .card{
-   	background-color: #EBEBEB;
-   	border-radius: 10px; 	
-    width: 95%;
-}
-  p{
-
-  }
-  #logo{
-    border-radius:10px;
-    position: relative;
-    bottom: 10px;
-
-  }
-  .black{
-    background-color: black;
-  }
-  p{
-    color: black;
-  }
-  h1{
-    color: black;
-  }
-
-
-    li {
-      font-size: 14px;
-    }
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-
- 
-
-      /*height:100px;*/
-    }
-
-    
-    /* Add a gray background color and some padding to the footer */
-
-    div {
-/*      border:solid red 3px;*/
-    }
-    .jumbotron {
-    	background-color: white;
-      margin-bottom: 0px;
-    }
-
-    .navText{
-      text-align: right;
-    }
-
-</style>
 </head>
 <body>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -335,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
        </button>
-      <a class="navbar-brand" href="index.html"><img id="logo" src="logo.jpg" alt="logo"></a>
+      <a class="navbar-brand" href="index.html"><img id="logo" src="images/logo.jpg" alt="logo"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -370,7 +58,7 @@
         <br>
   			<div class="col-sm-0 col-md-1"></div>
     		<div id="gentRightPic" class="col-sm-12 col-md-4">
-    			<img src="mensRight.png" class="img-responsive center-block" style="padding:20px;">
+    			<img src="images/mensRight.png" class="img-responsive center-block" style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
@@ -389,7 +77,7 @@
         <br>
   			<div class="col-sm-0 col-md-1"></div>
     		<div id="gentLeftPic" class="col-sm-12 col-md-4">
-    			<img src="mensLeft.png" class="img-responsive center-block" style="padding:20px;">
+    			<img src="images/mensLeft.png" class="img-responsive center-block" style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
@@ -408,7 +96,7 @@
         <br>
   			<div class="col-sm-0 col-md-1"></div>
     		<div id="ladiesLeft" class="col-sm-12 col-md-4">
-    			<img src="ladiesLeft.png" class="img-responsive center-block" style="padding:20px;">
+    			<img src="images/ladiesLeft.png" class="img-responsive center-block" style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
@@ -427,7 +115,7 @@
       <br>
   			<div class="col-sm-0 col-md-1"></div>
     		<div id="ladiesRight" class="col-sm-12 col-md-4">
-    			<img src="ladiesRight.png" class="img-responsive center-block" style="padding:20px;">
+    			<img src="images/ladiesRight.png" class="img-responsive center-block" style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
@@ -446,7 +134,7 @@
       <br>
   			<div class="col-sm-0 col-md-1"></div>
     		<div id="setPic1" class="col-sm-12 col-md-4">
-    			<img src="mensRight.png" class="img-responsive center-block" style="padding:20px;">
+    			<img src="images/mensRight.png" class="img-responsive center-block" style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
@@ -465,7 +153,7 @@
       <br>
   			<div class="col-sm-0 col-md-1"></div>
     		<div id="MensLeft2" class="col-sm-12 col-md-4">
-    			<img src="mensLeft.png" class="img-responsive center-block" style="padding:20px;">
+    			<img src="images/mensLeft.png" class="img-responsive center-block" style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
@@ -484,7 +172,7 @@
       <br>
   			<div class="col-sm-0 col-md-1"></div>
     		<div id="ladiesRight2" class="col-sm-12 col-md-4">
-    			<img class="img-responsive center-block" src="ladiesRight.png"  style="padding:20px;">
+    			<img class="img-responsive center-block" src="images/ladiesRight.png"  style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
@@ -503,7 +191,7 @@
       <br>
   			<div class="col-sm-0 col-md-1"></div>
     		<div id="ladiesLeft2" class=" col-sm-12 col-md-4">
-    			<img src="ladiesLeft.png" class="img-responsive center-block"style="padding:20px;">
+    			<img src="images/ladiesLeft.png" class="img-responsive center-block"style="padding:20px;">
         	</div>
         	<div class="col-sm-0 col-md-1"></div>
     		<div class="col-sm-12 col-md-5 text-center">
@@ -522,241 +210,57 @@
 
 
 
-    <footer class="footer-distributed">
+<footer class="footer-distributed">
 
-      <div class="footer-left">
+  <div class="footer-left">
 
-        <a href="index.html"><img src="logo.jpg" style="height: 70px; border-radius: 10px;"></a>
+    <a href="index.html"><img src="images/logo.jpg" style="height: 70px; border-radius: 10px;"></a>
 
-        <p class="footer-links">
-          <a href="index.html">Home</a>
-          ·
-          <a href="available.html">Pricing</a>
-          ·
-          <a href="#">About Us</a>
-        </p>
+    <p class="footer-links">
+      <a href="index.html">Home</a>
+      ·
+      <a href="available.html">Pricing</a>
+      ·
+      <a href="aboutus.html">About Us</a>
+    </p>
 
-        <p class="footer-company-name">Clubs 4 Hire &copy; 2017</p>
-      </div>
+    <p class="footer-company-name">Clubs 4 Hire &copy; 2017</p>
+  </div>
 
-      <div class="footer-center">
+  <div class="footer-center">
 
-        <div>
-          <i class="fa fa-map-marker"></i>
-          <p><span>36 Llewellyn Way</span> Ballinteer, Dublin 16</p>
-        </div>
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>36 Llewellyn Way</span> Ballinteer, Dublin 16</p>
+    </div>
 
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>085 555 123456</p>
-        </div>
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>085 555 123456</p>
+    </div>
 
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="mailto:barmoran@clubs4hire.com">barmoran@clubs4hire.com</a></p>
-        </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:barmoran@clubs4hire.com">barmoran@clubs4hire.com</a></p>
+    </div>
 
-      </div>
+  </div>
 
-      <div class="footer-right">
+  <div class="footer-right">
 
-        <img src="credit-cards.jpg" style="height: 30px;">
+    <img src="images/credit-cards.jpg" style="height: 30px;">
 
-        <div class="footer-icons">
+    <div class="footer-icons">
 
-          <a href="https://www.facebook.com/clubsforhire.ireland?fref=ts"><i class="fa fa-facebook"></i></a>
-          <a href="https://twitter.com/Clubs4Hire"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.youtube.com/clubs4hire"><i class="fa fa-youtube"></i></a>
-      </div>
+      <a href="https://www.facebook.com/clubsforhire.ireland?fref=ts"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/Clubs4Hire"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.youtube.com/clubs4hire"><i class="fa fa-youtube"></i></a>
+  </div>
 
-      </div>
+  </div>
 
-    </footer>
-<script type="text/javascript">
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
-    document.documentElement.scrollTop = 0; // For IE and Firefox
-}
-</script>
-
-<script>
-
-localStorage.removeItem("finalCurrency");
-localStorage.removeItem("finalFigure");
-localStorage.removeItem("count1");
-localStorage.removeItem("count2");
-localStorage.removeItem("count3");
-localStorage.removeItem("count4");
-localStorage.removeItem("count5");
-localStorage.removeItem("count6");
-localStorage.removeItem("count7");
-localStorage.removeItem("count8");
-
-
-var totalPrice = 0;
-
-$(".button-basket").on("click", function() {
-  var price = $(this).attr("data-price")
-  totalPrice += parseFloat(price);
-    $('.total-basket').html("€" + totalPrice.toFixed(2)); 
-})
-
-
-
-$("#one").on('click', function() {
-  var current1 = localStorage.getItem('count1');
-  if(current1 === NaN){
-    localStorage.setItem('count1', 1);
-  }
-  else{
-    current1 += 1;
-    localStorage.setItem('count1', current1);
-  }
-  
-  localStorage.setItem("pic1", 'mensLeft.png');
-  localStorage.setItem("des1", 'Callaway 22 Irons - X Series Driver & Woods - Putter & Bag Code:11RG Gents Right-Handed');
-  localStorage.setItem("price1", '69.95');
-})
-
-$("#two").on('click', function() {
-  var current2 = localStorage.getItem('count2');
-  if(current2 === NaN){
-    localStorage.setItem('count2', 1);
-  }
-  else{
-    current2 += 1;
-    localStorage.setItem('count2', current2);
-  }
-  
-  localStorage.setItem("pic2", 'mensRight.png');
-  localStorage.setItem("des2", 'Gents Left-Handed Callaway G2 Irons - G5 Driver & Woods - Putter & Bag (Code:3LG) Gents Left-Handed');
-  localStorage.setItem("price2", '79.95');
-})
-
-$("#three").on('click', function() {
-  var current3 = localStorage.getItem('count3');
-  if(current3 === NaN){
-    localStorage.setItem('count3', 1);
-  }
-  else{
-    current3 += 1;
-    localStorage.setItem('count3', current3);
-  }
-  
-  localStorage.setItem("pic3", 'ladiesLeft.png');
-  localStorage.setItem("des3", 'Ladies Left-Handed Taylormade Burner Irons - R9 Driver & Woods - Putter & Bag (Code:2LG) Ladies Left-Handed');
-  localStorage.setItem("price3", '79.95');
-})
-
-$("#four").on('click', function() {
-  var current4 = localStorage.getItem('count4');
-  if(current4 === NaN){
-    localStorage.setItem('count4', 1);
-  }
-  else{
-    current4 += 1;
-    localStorage.setItem('count4', current4);
-  }
-  
-  localStorage.setItem("pic4", 'ladiesRight.png');
-  localStorage.setItem("des4", 'Ladies Ping RBZ Irons, Hybrids and Woods - Putter & Bag (1RL) Ladies Right-Handed');
-  localStorage.setItem("price4", '69.95');
-})
-
-$("#five").on('click', function() {
-  var current5 = localStorage.getItem('count5');
-  if(current5 === NaN){
-    localStorage.setItem('count5', 1);
-  }
-  else{
-    current5 += 1;
-    localStorage.setItem('count5', current5);
-  }
-  
-  localStorage.setItem("pic5", 'mensRight.png');
-  localStorage.setItem("des5", 'Callaway Burner OS Graphite Irons - R11 Senior Shaft Driver, Reg Woods, Rescue - Putter & Bag (29RG)Gents Right-Handed');
-  localStorage.setItem("price5", '69.95');
-})
-
-$("#six").on('click', function() {
-  var current6 = localStorage.getItem('count6');
-  if(current6 === NaN){
-    localStorage.setItem('count6', 1);
-  }
-  else{
-    current6 += 1;
-    localStorage.setItem('count6', current6);
-  }
-  
-  localStorage.setItem("pic6", 'mensLeft.png');
-  localStorage.setItem("des6", 'Gents Left-Handed Callaway X Series Irons - X Hot Pro Reg Shaft Driver, Wood, Rescue - Putter & Bag(6LG)Gents Left-Handed');
-  localStorage.setItem("price6", '79.95');
-})
-
-$("#seven").on('click', function() {
-  var current7 = localStorage.getItem('count7');
-  if(current7 === NaN){
-    localStorage.setItem('count7', 1);
-  }
-  else{
-    current7 += 1;
-    localStorage.setItem('count7', current7);
-  }
-  
-  localStorage.setItem("pic7", 'ladiesRight.png');
-  localStorage.setItem("des7", 'Ladies Ping Solaire 8 Piece Set (Right-Handed) (6RL)Ladies Right-Handed');
-  localStorage.setItem("price7", '69.95');
-})
-
-$("#eight").on('click', function() {
-  var current8 = localStorage.getItem('count8');
-  if(current8 === NaN){
-    localStorage.setItem('count8', 1);
-  }
-  else{
-    current8 += 1;
-    localStorage.setItem('count8', current8);
-  }
-  
-  localStorage.setItem("pic8", 'ladiesLeft.png');
-  localStorage.setItem("des8", 'Ladies Left-Handed TaylorMade X Series Irons - X Hot Pro Reg Shaft Driver, Wood, Rescue - Putter &Bag (6LG)Ladies Left-Handed');
-  localStorage.setItem("price8", '79.95');
-})
-
-
-
-$(".toCart").on("click", function() {
-
-      localStorage.setItem("price", totalPrice.toFixed(2));
-})
-
-
-$("#club").on("change", function() {
-  var currentValue = $(this).val();
-  localStorage.setItem("golf-field", currentValue);
-})
-
-$.ajax({
-  url: 'https://api.fixer.io/latest',
-  dataType: "json"
-});
-
-window.onscroll = function() {scrollFunction()};
-
-
-
-
-
-</script>
+</footer>
+<script src="js/available.js"></script>
 <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>	
 </body>
 </html>

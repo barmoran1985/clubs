@@ -3,290 +3,40 @@
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Clubs4Hire.ie</title>
-  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <title>Clubs4Hire.ie</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/aboutus.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAdZM4d-Hy4VWeajKeCVrgGgMS0WHOVVQ&callback=myMap"></script>
-
-
-
-  <style>
-  #total {
-    position: relative;
-    bottom: 5px;
-  }
-
-
-
-  /*  -----------FOOTER CSS--------------*/
-
-.footer-distributed{
-  background-color: #292c2f;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  font: bold 16px sans-serif;
-
-  padding: 55px 50px;
-  margin-top: 80px;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-  display: inline-block;
-  vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-  width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3{
-  color:  #ffffff;
-  font: normal 36px 'Cookie', cursive;
-  margin: 0;
-}
-
-.footer-distributed h3 span{
-  color:  #5383d3;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-  color:  #ffffff;
-  margin: 20px 0 12px;
-  padding: 0;
-}
-
-.footer-distributed .footer-links a{
-  display:inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color:  inherit;
-}
-
-.footer-distributed .footer-company-name{
-  color:  #8f9296;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-  width: 35%;
-}
-
-.footer-distributed .footer-center i{
-  background-color:  #33383b;
-  color: #ffffff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-  font-size: 17px;
-  line-height: 38px;
-}
-
-.footer-distributed .footer-center p{
-  display: inline-block;
-  color: #ffffff;
-  vertical-align: middle;
-  margin:0;
-}
-
-.footer-distributed .footer-center p span{
-  display:block;
-  font-weight: normal;
-  font-size:14px;
-  line-height:2;
-}
-
-.footer-distributed .footer-center p a{
-  color:  #5383d3;
-  text-decoration: none;;
-}
-
-
-/* Footer Right */
-
-.footer-distributed .footer-right{
-  width: 20%;
-}
-
-.footer-distributed .footer-company-about{
-  line-height: 20px;
-  color:  #92999f;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-  display: block;
-  color:  #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-  margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color:  #33383b;
-  border-radius: 2px;
-
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-
-  margin-right: 3px;
-  margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-  .footer-distributed{
-    font: bold 14px sans-serif;
-  }
-
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .footer-distributed .footer-center i{
-    margin-left: 0;
-  }
-}
-
-/*  -----------FOOTER CSS--------------*/
-  #para{
-    margin: 20px;
-  }
-  #pic{
-    position: relative;
-    margin-top: 70px;
-  }
-  p{
-    font-family: Tahoma;
-  }
-  #logo{
-    border-radius:10px;
-    position: relative;
-    bottom: 10px;
-  }
-  .black{
-    background-color: black;
-  }
-  form{
-    color: white;
-  }
-  legend{
-    color: white;
-  }
-
-li a .total-basket {
-  position: relative;
-  bottom: 5px;
-  left:10px;
-}
-
-  li a span.glyphicon{
-    font-size: 30px;
-    position: relative;
-    top: -1px;
-    left: 0px;
-    font-size: 20px;
-   }
-  
-
-
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      position: fixed-relative;
-      /*height:100px;*/
-    }
-
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      color:white;
-      background-color: #222222;
-      padding: 25px;
-    }
-    div {
-/*      border:solid red 3px;*/
-    }
-    .jumbotron {
-    	background-color: white;
-      margin-bottom: 0px;
-      color: black;
-    }
-
-    .navText{
-      text-align: right;
-    }
-
-</style>
 </head>
 <body style="background-color:white">
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-       </button>
-      <a class="navbar-brand" href="index.html"><img id="logo" src="logo.jpg" alt="logo"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="navText"><a href="index.html">Home</a></li>
-        <li class="active navText"><a href="aboutus.html">About Us</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right navText">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img id="logo" src="images/logo.jpg" alt="logo"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="navText"><a href="index.html">Home</a></li>
+          <li class="active navText"><a href="aboutus.html">About Us</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right navText">
 
-        <li><a href="basket.html"><span id="cart" class="glyphicon glyphicon-shopping-cart"></span><span id='total'></span></a></li>
+          <li><a href="basket.html"><span id="cart" class="glyphicon glyphicon-shopping-cart"></span><span id='total'></span></a></li>
           <li>
 
-          <div id="google_translate_element"></div>
+            <div id="google_translate_element"></div>
           </li>
           <script type="text/javascript">
           function googleTranslateElementInit() {
@@ -294,7 +44,7 @@ li a .total-basket {
           }
           </script>
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
         </li>
       </ul>
@@ -306,111 +56,94 @@ li a .total-basket {
   <div class="row">
     <div class="col-lg-6 center-text">
       <h1>About Us</h1>
-        <p style="font-family:Verdana;">Clubs 4 Hire is based in Dublin, Ireland. It was established by two avid golf enthusiasts who have played many of Ireland's 400 golf courses. It was our observation that club rental services were not up to par, as it were, as we traveled from course to course, and we thought we could do better.
+      <p style="font-family:Verdana;">Clubs 4 Hire is based in Dublin, Ireland. It was established by two avid golf enthusiasts who have played many of Ireland's 400 golf courses. It was our observation that club rental services were not up to par, as it were, as we traveled from course to course, and we thought we could do better.
 
         It's a simple idea. Golfers traveling to Ireland could free themselves of having to bring their own golf clubs with them, and avoid the excess baggage charges of airlines, the inconvenience of carrying that extra luggage and the risk of losing them in transit. Instead, we'd provide the service of delivering a full set of clubs to the golfer at the airport, at their accommodations or at the golf course, and retrieve them when the round was completed.
         We offer a wide variety of club sets to choose from, including Ping, Cobra, Callaway, Cleveland, Nike, Ben Sayers and Mizuno, with choices in several different price categories. Golfers can mix and match from among these choices, too, for irons, woods and putters.
 
         Why not simply leave your clubs at home, travel lighter, and allow us to take care of your golf club needs. What could be more simple? Select your set, tell us where to delivery it and when, and we'll take care of the rest for you.</p>
       </div>
-    
-    <div class="col-md-6"><img id="pic" src="about.jpg" style="border-radius: 10px;" class="img-responsive center-block"></div>
-</div>
-  <br><br>
-  <div class="row">
-    <div class="col-md-6">
-      <h1>Location</h1>
-      <p>Clubs 4 Hire offices and warehouse are located opposite the state-of-the-art Studebaker building in Rathfarnham.<br><br>
 
-        We are served by the following buses:<br><br>
-        14A, 15, 15A, 64B.<br><br>
-
-        
-
-        Our mailing address is:<br><br>
-
-        36 Llewellyn Way<br>
-        Ballinteer,<br> 
-        Dublin 16,<br>
-        Republic of Ireland.<br>
-        085 555 123456<br><br>
-        barmoran@clubs4hire.com</p>
+      <div class="col-md-6"><img id="pic" src="images/about.jpg" style="border-radius: 10px;" class="img-responsive center-block"></div>
     </div>
-    <div class="col-md-6"><div id="googleMap" style="width:450px;height:300px;" class="img-responsive center-block"></div></div>  
+    <br><br>
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Location</h1>
+        <p>Clubs 4 Hire offices and warehouse are located opposite the state-of-the-art Studebaker building in Rathfarnham.<br><br>
 
-  </div><br>
-</div>
+          We are served by the following buses:<br><br>
+          14A, 15, 15A, 64B.<br><br>
+
+
+
+          Our mailing address is:<br><br>
+
+          36 Llewellyn Way<br>
+          Ballinteer,<br> 
+          Dublin 16,<br>
+          Republic of Ireland.<br>
+          085 555 123456<br><br>
+          barmoran@clubs4hire.com</p>
+        </div>
+        <div class="col-md-6"><div id="googleMap" style="width:450px;height:300px;" class="img-responsive center-block"></div></div>  
+
+      </div><br>
+    </div>
   </div>
-    <footer class="footer-distributed">
+  <footer class="footer-distributed">
 
-      <div class="footer-left">
+    <div class="footer-left">
 
-        <a href="index.html"><img src="logo.jpg" style="height: 70px; border-radius: 10px;"></a>
+      <a href="index.html"><img src="images/logo.jpg" style="height: 70px; border-radius: 10px;"></a>
 
-        <p class="footer-links">
-          <a href="index.html">Home</a>
-          ·
-          <a href="available.html">Pricing</a>
-          ·
-          <a href="#">About Us</a>
-        </p>
+      <p class="footer-links">
+        <a href="index.html">Home</a>
+        ·
+        <a href="available.html">Pricing</a>
+        ·
+        <a href="#">About Us</a>
+      </p>
 
-        <p class="footer-company-name">Clubs 4 Hire &copy; 2017</p>
+      <p class="footer-company-name">Clubs 4 Hire &copy; 2017</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>36 Llewellyn Way</span> Ballinteer, Dublin 16</p>
       </div>
 
-      <div class="footer-center">
-
-        <div>
-          <i class="fa fa-map-marker"></i>
-          <p><span>36 Llewellyn Way</span> Ballinteer, Dublin 16</p>
-        </div>
-
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>085 555 123456</p>
-        </div>
-
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="mailto:barmoran@clubs4hire.com">barmoran@clubs4hire.com</a></p>
-        </div>
-
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>085 555 123456</p>
       </div>
 
-      <div class="footer-right">
-
-        <img src="credit-cards.jpg" style="height: 30px;">
-
-        <div class="footer-icons">
-
-          <a href="https://www.facebook.com/clubsforhire.ireland?fref=ts"><i class="fa fa-facebook"></i></a>
-          <a href="https://twitter.com/Clubs4Hire"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.youtube.com/clubs4hire"><i class="fa fa-youtube"></i></a>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:barmoran@clubs4hire.com">barmoran@clubs4hire.com</a></p>
       </div>
 
+    </div>
+
+    <div class="footer-right">
+
+      <img src="images/credit-cards.jpg" style="height: 30px;">
+
+      <div class="footer-icons">
+
+        <a href="https://www.facebook.com/clubsforhire.ireland?fref=ts"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/Clubs4Hire"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/clubs4hire"><i class="fa fa-youtube"></i></a>
       </div>
 
-    </footer>
+    </div>
 
-<script>
-function myMap() {
-var mapOptions = {
-    center: new google.maps.LatLng(53.3020654, -6.2703007),
-    zoom: 15,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-}
-var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
-}
+  </footer>
 
-    var priceSelected = localStorage.getItem("price");
-    if(priceSelected === null){
-      $("#total").html("€0.00");
-    }
-    else{
-    $("#total").html("€" + priceSelected);
-    }
-</script>
-<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>	
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAdZM4d-Hy4VWeajKeCVrgGgMS0WHOVVQ&callback=myMap"></script>
+  <script type="text/javascript" src="js/aboutus.js"></script>
+  <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>	
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAdZM4d-Hy4VWeajKeCVrgGgMS0WHOVVQ&callback=myMap"></script>
 </body>
 </html>

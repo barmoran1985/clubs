@@ -1,0 +1,88 @@
+#success {
+  border: solid lightgrey 2px;
+  border-radius: 10px;
+  margin-top: 135px;
+}
+
+li a .total-basket {
+  position: relative;
+  bottom: 5px;
+  left:10px;
+}
+
+nav li a span.glyphicon{
+  font-size: 30px;
+  position: relative;
+  top: -1px;
+  left: 0px;
+  font-size: 20px;
+ }
+
+#secure {
+  position: relative;
+  top: 120px;
+  left: 90px;
+}
+
+#save_card{
+	position: relative;
+	left:3px;
+}
+
+label{
+	position: relative;
+	left:20px;
+}
+
+#head{
+	background-color: #5BC0DE;
+	display: inline-block;
+	padding: 10px;
+	border-radius:10px;
+}
+
+.add{
+	position:relative;
+}
+
+#header{
+	margin-top:100px;
+}
+
+#logo{
+	border-radius:10px;
+	position: relative;
+	bottom: 10px;
+}
+
+.black{
+	background-color: black;
+}
+
+p{
+	color: white;
+}
+
+h1{
+	color: white;
+}
+  
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  position: fixed-relative;
+  /*height:100px;*/
+}
+
+
+/* Add a gray background color and some padding to the footer */
+footer {
+  color:white;
+  background-color: #222222;
+  padding: 25px;
+}
+
+.navText{
+  text-align: right;
+}
